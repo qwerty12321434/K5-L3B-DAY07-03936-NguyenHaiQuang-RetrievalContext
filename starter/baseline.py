@@ -1,12 +1,17 @@
-"""TF-IDF retrieval baseline for Day 7. Python 3.11+, standard library only."""
+"""TF-IDF offline và benchmark so sánh retrieval trên kho Day06."""
 import argparse
+import hashlib
 import json
 import math
+import os
 import re
 import statistics
+import sys
 import time
 import unicodedata
 from collections import Counter
+from datetime import datetime, timezone
+from time import perf_counter
 from pathlib import Path
 
 
@@ -105,13 +110,112 @@ def evaluate(index, questions, budget=800):
     return traces
 
 
-def main():
-    parser = argparse.ArgumentParser(description='Chạy baseline TF-IDF trên một split rõ ràng')
-    parser.add_argument('--chunks', required=True, type=Path)
-    parser.add_argument('--questions', required=True, type=Path)
-    parser.add_argument('--split', required=True, choices=('dev', 'test'))
-    parser.add_argument('--output', required=True, type=Path, help='Thư mục output; file cùng tên sẽ bị ghi đè')
-    args = parser.parse_args()
+def run_day6_comparison(
+    day6_root: Path, database_url: str, ollama_url: str, questions_path: Path, output: Path,
+):
+    # Chỉ nạp code kết nối Day06 khi chạy so sánh. TF-IDF offline vẫn chạy độc lập.
+    from day6_retriever import connect_day6
+    from retrieval_benchmark import (
+        CANDIDATES, CONTEXT_BUDGET, RRF_K, TOP_K, load_chunks, run_case, summarize,
+    )
+
+    # Runner này dành cho dev. Test được giữ riêng để chạy sau khi chốt cấu hình.
+    raw_cases = questions_path.read_bytes()
+    cases = json.loads(raw_cases)
+    if any(case.get("split") != "dev" for case in cases):
+        raise ValueError("Chỉ nhận tập dev. Giữ nguyên tập test cho giai đoạn đánh giá cuối.")
+    answerable = [case for case in cases if case["answerable"] is True]
+    absent = [case for case in cases if case["answerable"] is False]
+    if len(answerable) < 15 or len(absent) < 2 or len(cases) != len(answerable) + len(absent):
+        raise ValueError("Dev cần ít nhất 15 câu có đáp án và 2 câu thiếu bằng chứng.")
+    if len({case["id"] for case in cases}) != len(cases):
+        raise ValueError("ID câu hỏi phải duy nhất.")
+
+    with connect_day6(day6_root, database_url, ollama_url) as retriever:
+        # Giữ ảnh chụp nhất quán dù kho Day06 có một lần ingest khác chạy đồng thời.
+        with retriever.store.connection.transaction():
+            retriever.store.connection.execute("SET TRANSACTION ISOLATION LEVEL REPEATABLE READ")
+            chunks = load_chunks(retriever)
+            validate(chunks, answerable)
+            started = perf_counter()
+            lexical = TfidfIndex(chunks)
+            build_ms = (perf_counter() - started) * 1000
+            # Làm nóng embedding trước khi đo truy vấn, ghi riêng thời gian làm nóng.
+            started = perf_counter()
+            retriever.search("kiểm tra kết nối kho dữ liệu cá nhân", top_k=1)
+            warmup_ms = (perf_counter() - started) * 1000
+            traces = [row for case in cases for row in run_case(case, retriever, lexical)]
+
+        chunk_bytes = json.dumps(chunks, ensure_ascii=False, sort_keys=True).encode("utf-8")
+        summary = {
+            "run_at_utc": datetime.now(timezone.utc).isoformat(),
+            "split": "dev",
+            "answerable": len(answerable),
+            "insufficient_evidence": len(absent),
+            "questions_sha256": hashlib.sha256(raw_cases).hexdigest(),
+            "corpus": {
+                "index": "day6_chunks/B",
+                "chunks": len(chunks),
+                "chunks_sha256": hashlib.sha256(chunk_bytes).hexdigest(),
+                "embedding_model": retriever.embedder.model_name,
+                "model_digest": retriever.embedder.digest,
+                "embedding_dimensions": retriever.embedder.dimensions,
+                **retriever.store.versions(),
+            },
+            "settings": {
+                "query": "original",
+                "filters": {},
+                "candidate_limit_per_branch": CANDIDATES,
+                "ranking_cutoff": TOP_K,
+                "rrf_k": RRF_K,
+                "context_budget_chars": CONTEXT_BUDGET,
+                "context_sent_to_llm": False,
+                "llm_tokens": None,
+                "tfidf_build_ms": round(build_ms, 3),
+                "embedding_warmup_ms": round(warmup_ms, 3),
+            },
+            "methods": summarize(traces),
+        }
+
+    output.mkdir(parents=True, exist_ok=True)
+    serialized = json.dumps(summary, ensure_ascii=False, indent=2) + "\n"
+    (output / "summary.json").write_text(serialized, encoding="utf-8")
+    with (output / "traces.jsonl").open("w", encoding="utf-8") as file:
+        for row in traces:
+            file.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return summary
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Chạy TF-IDF offline hoặc so sánh retrieval trên kho Day06.")
+    parser.add_argument("--compare", action="store_true", help="So sánh dense, TF-IDF và hybrid trên dev.")
+    parser.add_argument("--day6-root", type=Path, default=os.environ.get("DAY6_ROOT"))
+    parser.add_argument('--chunks', type=Path)
+    parser.add_argument('--questions', type=Path)
+    parser.add_argument('--split', choices=('dev', 'test'))
+    parser.add_argument('--output', type=Path, help='Thư mục output; file cùng tên sẽ bị ghi đè')
+    args = parser.parse_args(argv)
+
+    if args.compare:
+        database_url = os.environ.get("DATABASE_URL")
+        if not args.day6_root or not database_url:
+            parser.error("Cần đặt DAY6_ROOT (hoặc --day6-root) và DATABASE_URL.")
+        if args.chunks or args.split == "test":
+            parser.error("--compare dùng chunk B trực tiếp từ Day06 và chỉ chạy dev.")
+        ollama_url = os.environ.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
+        questions = args.questions or Path("data/benchmark_dev.json")
+        output = args.output or Path("results/retrieval_dev")
+        try:
+            summary = run_day6_comparison(args.day6_root, database_url, ollama_url, questions, output)
+        except Exception as error:
+            parser.exit(1, f"So sánh Day06 thất bại: {error}\n")
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        if any(method["errors"] for method in summary["methods"].values()):
+            parser.exit(1, "Một số lượt truy xuất lỗi. Xem trường error trong traces.jsonl.\n")
+        return
+
+    if not (args.chunks and args.questions and args.split and args.output):
+        parser.error("TF-IDF offline cần --chunks, --questions, --split và --output.")
     chunks = json.loads(args.chunks.read_text(encoding='utf-8'))
     questions = json.loads(args.questions.read_text(encoding='utf-8'))
     # Do not inspect held-out test evidence during dev work.
@@ -134,4 +238,6 @@ def main():
 
 
 if __name__ == '__main__':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
     main()

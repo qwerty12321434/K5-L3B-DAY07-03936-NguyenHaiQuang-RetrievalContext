@@ -1,0 +1,5 @@
+# Keep the byte checksums used by the frozen benchmark and recorded evaluation.
+/data/benchmark_*.json -text
+/results/agent_dev/run.json -text
+/results/agent_dev/selection.json -text
+/results/agent_dev/*/reviews.json -text

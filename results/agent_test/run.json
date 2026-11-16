@@ -1,0 +1,36 @@
+{
+  "split": "test",
+  "started_at_utc": "2026-11-16T03:58:36.047419+00:00",
+  "questions_sha256": "ce12ce53b9033e59c91716bd736e8e4b95da0329d46147dfc8ba9cd1b6a1fb87",
+  "selection_sha256": "83c5d8f6c9fb9d1d7755e6132bceb699d7278d511b9da9c65ef1049de81ee069",
+  "methods": [
+    "dense",
+    "hybrid_rrf"
+  ],
+  "configuration": {
+    "chat_model": "qwen3.5:4b",
+    "chat_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "ollama_version": "0.40.16",
+    "storage": {
+      "postgres": "16.16 (Debian 16.16-1.pgdg12+1)",
+      "pgvector": "0.8.7"
+    },
+    "chunks": 190,
+    "chunks_sha256": "60aff9c82603b9ad5691d8bde40bc835a0d3903fade65a04b011e1a5e858efeb",
+    "code_sha256": {
+      "agentic.py": "c18b237d972162be5dda1e34dde1527bc9ec48b4df5127b00b3d69360528fd3a",
+      "baseline.py": "f80a185c7690d02b6de364809cb06285676987572d710bce494aa463ed4e3705",
+      "day6_retriever.py": "1ee2b4f4d9a3772556908a98e8e3afbba42e5bfc0c5dd5a32230153abb96bd73",
+      "retrieval_benchmark.py": "44f37c0fee8cfc1c64c4a5a5dc646589b68bed75762f5b11dd7224ee6f7e89c8",
+      "day6/embeddings.py": "00d5ac652714c99d8c7c3374f9b80c5ae63565b977c8487e6a4c21b53e3a43d3",
+      "day6/store.py": "18ee0a509d81021173d1ae74d1bf0bd52421ccf53bfab15a736f9329259c0b21"
+    },
+    "max_searches": 4,
+    "top_k": 3,
+    "context_budget_chars": 1500,
+    "first_query": "original",
+    "filter": null
+  }
+}

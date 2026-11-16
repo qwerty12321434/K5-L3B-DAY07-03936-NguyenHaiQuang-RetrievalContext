@@ -1,0 +1,94 @@
+{
+  "run_at_utc": "2026-11-16T03:07:18.259438+00:00",
+  "split": "dev",
+  "answerable": 15,
+  "insufficient_evidence": 2,
+  "questions_sha256": "734670949625a253522f8f5aad0a94f0754e0b83545cf2d618002c65d1632426",
+  "corpus": {
+    "index": "day6_chunks/B",
+    "chunks": 190,
+    "chunks_sha256": "60aff9c82603b9ad5691d8bde40bc835a0d3903fade65a04b011e1a5e858efeb",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "embedding_dimensions": 1024,
+    "postgres": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7"
+  },
+  "settings": {
+    "query": "original",
+    "filters": {},
+    "candidate_limit_per_branch": 10,
+    "ranking_cutoff": 3,
+    "rrf_k": 60,
+    "context_budget_chars": 1500,
+    "context_sent_to_llm": false,
+    "llm_tokens": null,
+    "tfidf_build_ms": 8.839,
+    "embedding_warmup_ms": 3729.615
+  },
+  "methods": {
+    "dense": {
+      "queries": 17,
+      "errors": 0,
+      "hit_at_1": {
+        "n": 8,
+        "total": 15,
+        "percent": 53.33
+      },
+      "evidence_hit_at_3": {
+        "n": 12,
+        "total": 15,
+        "percent": 80.0
+      },
+      "packed_context_evidence_rate": {
+        "n": 12,
+        "total": 15,
+        "percent": 80.0
+      },
+      "median_ms": 26.485,
+      "api_cost_usd": 0
+    },
+    "tfidf": {
+      "queries": 17,
+      "errors": 0,
+      "hit_at_1": {
+        "n": 9,
+        "total": 15,
+        "percent": 60.0
+      },
+      "evidence_hit_at_3": {
+        "n": 11,
+        "total": 15,
+        "percent": 73.33
+      },
+      "packed_context_evidence_rate": {
+        "n": 10,
+        "total": 15,
+        "percent": 66.67
+      },
+      "median_ms": 0.664,
+      "api_cost_usd": 0
+    },
+    "hybrid_rrf": {
+      "queries": 17,
+      "errors": 0,
+      "hit_at_1": {
+        "n": 10,
+        "total": 15,
+        "percent": 66.67
+      },
+      "evidence_hit_at_3": {
+        "n": 11,
+        "total": 15,
+        "percent": 73.33
+      },
+      "packed_context_evidence_rate": {
+        "n": 11,
+        "total": 15,
+        "percent": 73.33
+      },
+      "median_ms": 27.792,
+      "api_cost_usd": 0
+    }
+  }
+}

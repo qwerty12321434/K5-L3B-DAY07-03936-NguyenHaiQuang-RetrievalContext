@@ -1,0 +1,189 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "answer_reason": "Agent từ chối vì context không nêu đủ hai nhóm dữ liệu.",
+    "context_reason": "Trang PDF 23 có tên nhóm cơ bản nhưng context không nêu nhóm còn lại hay cách phân loại hai nhóm.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng nhóm máu là thông tin bị loại trừ.",
+    "context_reason": "Trang PDF 3 nêu rõ hồ sơ bệnh án không bao gồm thông tin về nhóm máu trong mục được hỏi.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang PDF 3 nêu rõ hồ sơ bệnh án không bao gồm thông tin về nhóm máu trong mục được hỏi."
+    ]
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "answer_reason": "Agent từ chối dù context có quy tắc trực tiếp tại trang 5.",
+    "context_reason": "Trang PDF 5 nêu dữ liệu thu thập phải phù hợp và giới hạn theo phạm vi, mục đích xử lý.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "answer_reason": "Có đoạn đúng nhưng model thêm nguồn [4] ngoài danh sách 3 đoạn, nên đầu ra bị từ chối.",
+    "context_reason": "Trang PDF 7 có tiêu đề Điều 8 và mục 4 liệt kê đúng hành vi cản trở.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đủ thời hạn, phạm vi và ngoại lệ.",
+    "context_reason": "Trang PDF 8 có mốc 72 giờ, phạm vi dữ liệu được yêu cầu hạn chế và ngoại lệ luật khác.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang PDF 8 có mốc 72 giờ, phạm vi dữ liệu được yêu cầu hạn chế và ngoại lệ luật khác."
+    ]
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "answer_reason": "Agent từ chối câu có đáp án vì context không có đoạn đủ bằng chứng.",
+    "context_reason": "Trang PDF 4 định nghĩa đồng ý là thể hiện rõ ràng và tự nguyện, nhưng context thiếu điều khoản nói trực tiếp về im lặng.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 1,
+    "context_grade": 2,
+    "answer_reason": "Đúng về việc xử lý đã được đồng ý trước đó. Phần khẳng định riêng về hiệu lực sau khi rút lại không được đoạn dẫn trực tiếp hỗ trợ.",
+    "context_reason": "Trang PDF 10 nêu việc rút lại không làm thay đổi tính hợp pháp của xử lý đã được đồng ý trước đó.",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "Đoạn dẫn xác nhận phần xử lý trước khi rút lại. Citation đặt sau mệnh đề về các hoạt động sau khi rút lại, phần này không được đoạn dẫn nêu trực tiếp."
+    ]
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng một lần và trước khi tiến hành xử lý.",
+    "context_reason": "Trang PDF 11 có đủ số lần thông báo và thời điểm trước khi xử lý.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang PDF 11 có đủ số lần thông báo và thời điểm trước khi xử lý."
+    ]
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng hai bên có thể được yêu cầu, không đặt thêm điều kiện về việc phải gửi đồng thời.",
+    "context_reason": "Trang PDF 13 nêu cả hai bên có thể được yêu cầu chỉnh sửa khi chủ thể không thể tự sửa.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang PDF 13 nêu cả hai bên có thể được yêu cầu chỉnh sửa khi chủ thể không thể tự sửa."
+    ]
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 1,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng quyền yêu cầu xóa nhưng gán nhầm nghĩa vụ thông báo hậu quả khi rút lại sự đồng ý cho Điều 16.",
+    "context_reason": "Trang PDF 14 có khoản 1 Điều 16 và điểm b về rút lại sự đồng ý.",
+    "citation_support": [
+      true,
+      false
+    ],
+    "citation_reasons": [
+      "Trang 14, Điều 16, hỗ trợ quyền yêu cầu xóa khi rút lại sự đồng ý.",
+      "Trang 10 có nghĩa vụ thông báo hậu quả, nhưng đây là khoản 3 Điều 12, không phải Điều 16."
+    ]
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng cha, mẹ trong tình huống câu hỏi.",
+    "context_reason": "Trang PDF 16 nêu cha, mẹ là người cần đồng ý nếu thiếu vợ, chồng hoặc con thành niên.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang PDF 16 nêu cha, mẹ là người cần đồng ý nếu thiếu vợ, chồng hoặc con thành niên."
+    ]
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng 60 ngày kể từ ngày tiến hành xử lý.",
+    "context_reason": "Trang PDF 20 nêu cả 60 ngày và mốc bắt đầu tiến hành xử lý.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang PDF 20 nêu cả 60 ngày và mốc bắt đầu tiến hành xử lý."
+    ]
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "answer_reason": "Agent từ chối câu có đáp án. Không nhầm các nghĩa vụ khác với nghĩa vụ được hỏi.",
+    "context_reason": "Context không nêu nghĩa vụ xóa và trả lại toàn bộ dữ liệu sau khi kết thúc xử lý.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng thông tin phải ghi là địa chỉ nhận.",
+    "context_reason": "Trang PDF 31 ghi nhận qua bưu điện thì ghi rõ địa chỉ nhận.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang PDF 31 ghi nhận qua bưu điện thì ghi rõ địa chỉ nhận."
+    ]
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "answer_reason": "Model chỉ sinh mã nguồn [1], hệ thống trả về từ chối vì không có nội dung câu trả lời.",
+    "context_reason": "Context có Mẫu 05 và trường Nội dung thay đổi nhưng thiếu trường Lý do thay đổi.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q21",
+    "abstention_correct": true,
+    "answer_reason": "Agent báo thiếu bằng chứng. Ô email trong biểu mẫu là thông tin người lập, không phải email nơi nhận.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q22",
+    "abstention_correct": true,
+    "answer_reason": "Agent báo thiếu bằng chứng. Các đoạn nói về loại xử lý và hành vi vi phạm, không có số tiền cụ thể.",
+    "citation_support": [],
+    "citation_reasons": []
+  }
+]

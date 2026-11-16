@@ -32,6 +32,19 @@ class AgentTests(unittest.TestCase):
             c = Controller([{'action':'search','query':'q'}, {'action':'answer','answer':f'7 ngày [{cid}]','citations':[cid]}])
             self.assertEqual(run_agent('q', c, Retriever(rows))['status'], 'abstain')
 
+    def test_rejects_citation_without_answer_text(self):
+        # Citation hợp lệ về ID vẫn chưa đủ nếu chương trình không có câu trả lời.
+        cid = CHUNK['id']
+        for answer in (f'[{cid}]', f'[{cid}](https://example.test).'):
+            with self.subTest(answer=answer):
+                controller = Controller([
+                    {'action': 'search', 'query': 'q'},
+                    {'action': 'answer', 'answer': answer, 'citations': [cid]},
+                ])
+                result = run_agent('q', controller, Retriever([CHUNK]))
+                self.assertEqual(result['status'], 'abstain')
+                self.assertEqual(result['events'][-1]['event'], 'invalid_or_missing_citations')
+
     def test_search_limit_is_enforced(self):
         c = Controller([{'action':'search','query':'one'}, {'action':'search','query':'two'}, {'action':'search','query':'three'}])
         r = Retriever([CHUNK]); result = run_agent('q', c, r, max_searches=2)

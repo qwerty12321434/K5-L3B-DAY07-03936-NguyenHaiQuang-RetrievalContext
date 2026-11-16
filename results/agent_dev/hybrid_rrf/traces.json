@@ -1,0 +1,2009 @@
+[
+  {
+    "query_id": "q01",
+    "question": "Nghị định chia dữ liệu cá nhân thành hai nhóm nào?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1067.675,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 713.552,
+        "prompt_tokens": 511,
+        "output_tokens": 36,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Nghị định chia dữ liệu cá nhân thành hai nhóm nào?"
+      },
+      {
+        "elapsed_ms": 328.358,
+        "prompt_tokens": 775,
+        "output_tokens": 9,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Nghị định chia dữ liệu cá nhân thành hai nhóm nào?\n\n[1] Trang 6\nĐiều 6. Áp dụng Nghị định bảo vệ dữ liệu cá nhân, các luật liên quan và Điều ước quốc tế\nViệc bảo vệ dữ liệu cá nhân được thực hiện theo quy định các điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên, các quy định khác của Luật có liên quan và Nghị định này.\n\n\n[2] Trang 23\nĐiều 27. Bảo vệ dữ liệu cá nhân cơ bản\n1. Áp dụng các biện pháp được quy định tại khoản 2 Điều 26 Nghị định này.\n2. Xây dựng, ban hành các quy định về bảo vệ dữ liệu cá nhân, nêu rõ những việc cần thực hiện theo quy định của Nghị định này.\n3. Khuyến khích áp dụng các tiêu chuẩn bảo vệ dữ liệu cá nhân phù hợp với lĩnh vực, ngành nghề, hoạt động có liên quan tới xử lý dữ liệu cá nhân.\n",
+        "response_text": "Không đủ bằng chứng để trả lời."
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Nghị định chia dữ liệu cá nhân thành hai nhóm nào?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:6:897:1180:7c343e600296a398",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 6,
+            "text": "Điều 6. Áp dụng Nghị định bảo vệ dữ liệu cá nhân, các luật liên quan và Điều ước quốc tế\nViệc bảo vệ dữ liệu cá nhân được thực hiện theo quy định các điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên, các quy định khác của Luật có liên quan và Nghị định này.\n",
+            "metadata": {
+              "end": 1180,
+              "start": 897,
+              "section": "than_nghi_dinh",
+              "printed_page": 8,
+              "article_numbers": [
+                6
+              ]
+            },
+            "score": 0.031754032258064516,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 4,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:23:700:1086:7a6905a3ae400006",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 23,
+            "text": "Điều 27. Bảo vệ dữ liệu cá nhân cơ bản\n1. Áp dụng các biện pháp được quy định tại khoản 2 Điều 26 Nghị định này.\n2. Xây dựng, ban hành các quy định về bảo vệ dữ liệu cá nhân, nêu rõ những việc cần thực hiện theo quy định của Nghị định này.\n3. Khuyến khích áp dụng các tiêu chuẩn bảo vệ dữ liệu cá nhân phù hợp với lĩnh vực, ngành nghề, hoạt động có liên quan tới xử lý dữ liệu cá nhân.\n",
+            "metadata": {
+              "end": 1086,
+              "start": 700,
+              "section": "than_nghi_dinh",
+              "printed_page": 25,
+              "article_numbers": [
+                27
+              ]
+            },
+            "score": 0.031024531024531024,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 6
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:15:396:845:e2230df0037ebcf4",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 15,
+            "text": "4. Trường hợp chia, tách, sáp nhập cơ quan, tổ chức, đơn vị hành chính và tổ chức lại, chuyển đổi hình thức sở hữu doanh nghiệp nhà nước thì dữ liệu cá nhân được chuyển giao theo quy định của pháp luật.\n5. Việc xóa dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu với toàn bộ dữ liệu cá nhân mà Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thu thập được, trừ trường hợp pháp luật có quy định khác.\n",
+            "metadata": {
+              "end": 845,
+              "start": 396,
+              "section": "than_nghi_dinh",
+              "printed_page": 17,
+              "article_numbers": [
+                16
+              ]
+            },
+            "score": 0.01639344262295082,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "tfidf": 1
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:6:897:1180:7c343e600296a398 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 6]\nĐiều 6. Áp dụng Nghị định bảo vệ dữ liệu cá nhân, các luật liên quan và Điều ước quốc tế\nViệc bảo vệ dữ liệu cá nhân được thực hiện theo quy định các điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên, các quy định khác của Luật có liên quan và Nghị định này.\n\n\n[B:nd-13-2023-nd-cp:23:700:1086:7a6905a3ae400006 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 23]\nĐiều 27. Bảo vệ dữ liệu cá nhân cơ bản\n1. Áp dụng các biện pháp được quy định tại khoản 2 Điều 26 Nghị định này.\n2. Xây dựng, ban hành các quy định về bảo vệ dữ liệu cá nhân, nêu rõ những việc cần thực hiện theo quy định của Nghị định này.\n3. Khuyến khích áp dụng các tiêu chuẩn bảo vệ dữ liệu cá nhân phù hợp với lĩnh vực, ngành nghề, hoạt động có liên quan tới xử lý dữ liệu cá nhân.\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:6:897:1180:7c343e600296a398",
+          "B:nd-13-2023-nd-cp:23:700:1086:7a6905a3ae400006"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 25.498
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "q02",
+    "question": "Trong mục phân loại tình trạng sức khỏe và đời tư ghi trong hồ sơ bệnh án, Nghị định loại trừ thông tin gì?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2043.82,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 949.91,
+        "prompt_tokens": 524,
+        "output_tokens": 49,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Trong mục phân loại tình trạng sức khỏe và đời tư ghi trong hồ sơ bệnh án, Nghị định loại trừ thông tin gì?"
+      },
+      {
+        "elapsed_ms": 1068.753,
+        "prompt_tokens": 900,
+        "output_tokens": 48,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Trong mục phân loại tình trạng sức khỏe và đời tư ghi trong hồ sơ bệnh án, Nghị định loại trừ thông tin gì?\n\n[1] Trang 3\n4. Dữ liệu cá nhân nhạy cảm là dữ liệu cá nhân gắn liền với quyền riêng tư của cá nhân mà khi bị xâm phạm sẽ gây ảnh hưởng trực tiếp tới quyền và lợi ích hợp pháp của cá nhân gồm:\na) Quan điểm chính trị, quan điểm tôn giáo;\nb) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao gồm thông tin về nhóm máu;\nc) Thông tin liên quan đến nguồn gốc chủng tộc, nguồn gốc dân tộc;\nd) Thông tin về đặc điểm di truyền được thừa hưởng hoặc có được của cá nhân;\n\n\n[2] Trang 15\nĐiều 17. Xử lý dữ liệu cá nhân trong trường hợp không cần sự đồng ý của chủ thể dữ liệu\n1. Trong trường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác. Bên Kiểm soát\n\n[3] Trang 3\nđ) Thông tin về thuộc tính vật lý, đặc điểm sinh học riêng của cá nhân;\ne) Thông tin về đời sống tình dục, xu hướng tình dục của cá nhân;\ng) Dữ liệu về tội phạm, hành vi phạm tội được thu thập, lưu trữ bởi các cơ quan thực thi pháp luật;\n",
+        "response_text": "Theo đoạn trích [1], Nghị định loại trừ thông tin về nhóm máu khỏi mục phân loại tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án.\n\nCâu trả lời: Thông tin về nhóm máu [1]."
+      }
+    ],
+    "status": "answered",
+    "answer": "Theo đoạn trích [B:nd-13-2023-nd-cp:3:0:468:d76c5e4c865c057a], Nghị định loại trừ thông tin về nhóm máu khỏi mục phân loại tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án.\n\nCâu trả lời: Thông tin về nhóm máu [B:nd-13-2023-nd-cp:3:0:468:d76c5e4c865c057a].",
+    "citations": [
+      "B:nd-13-2023-nd-cp:3:0:468:d76c5e4c865c057a"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong mục phân loại tình trạng sức khỏe và đời tư ghi trong hồ sơ bệnh án, Nghị định loại trừ thông tin gì?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:3:0:468:d76c5e4c865c057a",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 3,
+            "text": "4. Dữ liệu cá nhân nhạy cảm là dữ liệu cá nhân gắn liền với quyền riêng tư của cá nhân mà khi bị xâm phạm sẽ gây ảnh hưởng trực tiếp tới quyền và lợi ích hợp pháp của cá nhân gồm:\na) Quan điểm chính trị, quan điểm tôn giáo;\nb) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao gồm thông tin về nhóm máu;\nc) Thông tin liên quan đến nguồn gốc chủng tộc, nguồn gốc dân tộc;\nd) Thông tin về đặc điểm di truyền được thừa hưởng hoặc có được của cá nhân;\n",
+            "metadata": {
+              "end": 468,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 5,
+              "article_numbers": [
+                2
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:15:1783:2025:eeee48abd49fdbda",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 15,
+            "text": "Điều 17. Xử lý dữ liệu cá nhân trong trường hợp không cần sự đồng ý của chủ thể dữ liệu\n1. Trong trường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác. Bên Kiểm soát",
+            "metadata": {
+              "end": 2025,
+              "start": 1783,
+              "section": "than_nghi_dinh",
+              "printed_page": 17,
+              "article_numbers": [
+                17
+              ]
+            },
+            "score": 0.031754032258064516,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 4,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:3:468:706:b9a88f7d79d99c72",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 3,
+            "text": "đ) Thông tin về thuộc tính vật lý, đặc điểm sinh học riêng của cá nhân;\ne) Thông tin về đời sống tình dục, xu hướng tình dục của cá nhân;\ng) Dữ liệu về tội phạm, hành vi phạm tội được thu thập, lưu trữ bởi các cơ quan thực thi pháp luật;\n",
+            "metadata": {
+              "end": 706,
+              "start": 468,
+              "section": "than_nghi_dinh",
+              "printed_page": 5,
+              "article_numbers": [
+                2
+              ]
+            },
+            "score": 0.03036576949620428,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 9,
+              "tfidf": 3
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:3:0:468:d76c5e4c865c057a | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 3]\n4. Dữ liệu cá nhân nhạy cảm là dữ liệu cá nhân gắn liền với quyền riêng tư của cá nhân mà khi bị xâm phạm sẽ gây ảnh hưởng trực tiếp tới quyền và lợi ích hợp pháp của cá nhân gồm:\na) Quan điểm chính trị, quan điểm tôn giáo;\nb) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao gồm thông tin về nhóm máu;\nc) Thông tin liên quan đến nguồn gốc chủng tộc, nguồn gốc dân tộc;\nd) Thông tin về đặc điểm di truyền được thừa hưởng hoặc có được của cá nhân;\n\n\n[B:nd-13-2023-nd-cp:15:1783:2025:eeee48abd49fdbda | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 15]\nĐiều 17. Xử lý dữ liệu cá nhân trong trường hợp không cần sự đồng ý của chủ thể dữ liệu\n1. Trong trường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác. Bên Kiểm soát\n\n[B:nd-13-2023-nd-cp:3:468:706:b9a88f7d79d99c72 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 3]\nđ) Thông tin về thuộc tính vật lý, đặc điểm sinh học riêng của cá nhân;\ne) Thông tin về đời sống tình dục, xu hướng tình dục của cá nhân;\ng) Dữ liệu về tội phạm, hành vi phạm tội được thu thập, lưu trữ bởi các cơ quan thực thi pháp luật;\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:3:0:468:d76c5e4c865c057a",
+          "B:nd-13-2023-nd-cp:15:1783:2025:eeee48abd49fdbda",
+          "B:nd-13-2023-nd-cp:3:468:706:b9a88f7d79d99c72"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 24.78
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q03",
+    "question": "Có được thu thập rộng hơn phạm vi cần thiết rồi quyết định dùng dữ liệu vào việc gì sau không?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1431.871,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1058.196,
+        "prompt_tokens": 520,
+        "output_tokens": 45,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Có được thu thập rộng hơn phạm vi cần thiết rồi quyết định dùng dữ liệu vào việc gì sau không?"
+      },
+      {
+        "elapsed_ms": 346.313,
+        "prompt_tokens": 866,
+        "output_tokens": 9,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Có được thu thập rộng hơn phạm vi cần thiết rồi quyết định dùng dữ liệu vào việc gì sau không?\n\n[1] Trang 5\n4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục đích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ trường hợp luật có quy định khác.\n5. Dữ liệu cá nhân được cập nhật, bổ sung phù hợp với mục đích xử lý.\n\n\n[2] Trang 11\na) Chủ thể dữ liệu đã biết rõ và đồng ý toàn bộ với nội dung quy định tại khoản 1 và khoản 2 Điều này trước khi đồng ý cho Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân tiến hành thu thập dữ liệu cá nhân, phù hợp với các quy định tại Điều 9 Nghị định này;\nb) Dữ liệu cá nhân được xử lý bởi cơ quan nhà nước có thẩm quyền với mục đích phục vụ hoạt động của cơ quan nhà nước theo quy định của pháp luật.\n\n\n[3] Trang 18\n2. Việc thiết lập các hệ thống phần mềm, biện pháp kỹ thuật hoặc tổ chức các hoạt động thu thập, chuyển giao, mua, bán dữ liệu cá nhân không có sự đồng ý của chủ thể dữ liệu là vi phạm pháp luật.\n",
+        "response_text": "Không đủ bằng chứng để trả lời."
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Có được thu thập rộng hơn phạm vi cần thiết rồi quyết định dùng dữ liệu vào việc gì sau không?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:5:440:692:5faea4815f1a7aa0",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 5,
+            "text": "4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục đích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ trường hợp luật có quy định khác.\n5. Dữ liệu cá nhân được cập nhật, bổ sung phù hợp với mục đích xử lý.\n",
+            "metadata": {
+              "end": 692,
+              "start": 440,
+              "section": "than_nghi_dinh",
+              "printed_page": 7,
+              "article_numbers": [
+                3
+              ]
+            },
+            "score": 0.03225806451612903,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:11:1160:1586:dcf6d79cd1a3c6d3",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 11,
+            "text": "a) Chủ thể dữ liệu đã biết rõ và đồng ý toàn bộ với nội dung quy định tại khoản 1 và khoản 2 Điều này trước khi đồng ý cho Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân tiến hành thu thập dữ liệu cá nhân, phù hợp với các quy định tại Điều 9 Nghị định này;\nb) Dữ liệu cá nhân được xử lý bởi cơ quan nhà nước có thẩm quyền với mục đích phục vụ hoạt động của cơ quan nhà nước theo quy định của pháp luật.\n",
+            "metadata": {
+              "end": 1586,
+              "start": 1160,
+              "section": "than_nghi_dinh",
+              "printed_page": 13,
+              "article_numbers": [
+                13
+              ]
+            },
+            "score": 0.01639344262295082,
+            "component_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:18:0:196:603db5606a2f254c",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 18,
+            "text": "2. Việc thiết lập các hệ thống phần mềm, biện pháp kỹ thuật hoặc tổ chức các hoạt động thu thập, chuyển giao, mua, bán dữ liệu cá nhân không có sự đồng ý của chủ thể dữ liệu là vi phạm pháp luật.\n",
+            "metadata": {
+              "end": 196,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 20,
+              "article_numbers": [
+                22
+              ]
+            },
+            "score": 0.01639344262295082,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "tfidf": 1
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:5:440:692:5faea4815f1a7aa0 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 5]\n4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục đích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ trường hợp luật có quy định khác.\n5. Dữ liệu cá nhân được cập nhật, bổ sung phù hợp với mục đích xử lý.\n\n\n[B:nd-13-2023-nd-cp:11:1160:1586:dcf6d79cd1a3c6d3 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 11]\na) Chủ thể dữ liệu đã biết rõ và đồng ý toàn bộ với nội dung quy định tại khoản 1 và khoản 2 Điều này trước khi đồng ý cho Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân tiến hành thu thập dữ liệu cá nhân, phù hợp với các quy định tại Điều 9 Nghị định này;\nb) Dữ liệu cá nhân được xử lý bởi cơ quan nhà nước có thẩm quyền với mục đích phục vụ hoạt động của cơ quan nhà nước theo quy định của pháp luật.\n\n\n[B:nd-13-2023-nd-cp:18:0:196:603db5606a2f254c | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 18]\n2. Việc thiết lập các hệ thống phần mềm, biện pháp kỹ thuật hoặc tổ chức các hoạt động thu thập, chuyển giao, mua, bán dữ liệu cá nhân không có sự đồng ý của chủ thể dữ liệu là vi phạm pháp luật.\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:5:440:692:5faea4815f1a7aa0",
+          "B:nd-13-2023-nd-cp:11:1160:1586:dcf6d79cd1a3c6d3",
+          "B:nd-13-2023-nd-cp:18:0:196:603db5606a2f254c"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 26.855
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "q04",
+    "question": "Trong nhóm hành vi bị nghiêm cấm, Nghị định nói gì về việc cản trở cơ quan có thẩm quyền thực hiện công tác bảo vệ dữ liệu cá nhân?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2151.289,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1057.83,
+        "prompt_tokens": 530,
+        "output_tokens": 55,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Trong nhóm hành vi bị nghiêm cấm, Nghị định nói gì về việc cản trở cơ quan có thẩm quyền thực hiện công tác bảo vệ dữ liệu cá nhân?"
+      },
+      {
+        "elapsed_ms": 1070.472,
+        "prompt_tokens": 973,
+        "output_tokens": 47,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Trong nhóm hành vi bị nghiêm cấm, Nghị định nói gì về việc cản trở cơ quan có thẩm quyền thực hiện công tác bảo vệ dữ liệu cá nhân?\n\n[1] Trang 7\nĐiều 8. Hành vi bị nghiêm cấm\n1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.\n3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.\n4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.\n\n\n[2] Trang 9\n5. Thực hiện quy định của pháp luật về bảo vệ dữ liệu cá nhân và tham gia phòng, chống các hành vi vi phạm quy định về bảo vệ dữ liệu cá nhân.\nMục 2\nBẢO VỆ DỮ LIỆU CÁ NHÂN\nTRONG QUÁ TRÌNH XỬ LÝ DỮ LIỆU CÁ NHÂN\n\n\n[3] Trang 1\nĐiều 1. Phạm vi điều chỉnh và đối tượng áp dụng\n1. Nghị định này quy định về bảo vệ dữ liệu cá nhân và trách nhiệm bảo vệ dữ liệu cá nhân của cơ quan, tổ chức, cá nhân có liên quan.\n2. Nghị định này áp dụng đối với:\na) Cơ quan, tổ chức, cá nhân Việt Nam;\nb) Cơ quan, tổ chức, cá nhân nước ngoài tại Việt Nam;\nc) Cơ quan, tổ chức, cá nhân Việt Nam hoạt động tại nước ngoài;",
+        "response_text": "Trong nhóm hành vi bị nghiêm cấm, Nghị định quy định việc cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền là một hành vi bị nghiêm cấm.\n\nCâu trả lời [1][4]."
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong nhóm hành vi bị nghiêm cấm, Nghị định nói gì về việc cản trở cơ quan có thẩm quyền thực hiện công tác bảo vệ dữ liệu cá nhân?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:7:182:648:811359a214806c56",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 7,
+            "text": "Điều 8. Hành vi bị nghiêm cấm\n1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.\n3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.\n4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.\n",
+            "metadata": {
+              "end": 648,
+              "start": 182,
+              "section": "than_nghi_dinh",
+              "printed_page": 9,
+              "article_numbers": [
+                8
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:9:628:838:41e967f5a622d806",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 9,
+            "text": "5. Thực hiện quy định của pháp luật về bảo vệ dữ liệu cá nhân và tham gia phòng, chống các hành vi vi phạm quy định về bảo vệ dữ liệu cá nhân.\nMục 2\nBẢO VỆ DỮ LIỆU CÁ NHÂN\nTRONG QUÁ TRÌNH XỬ LÝ DỮ LIỆU CÁ NHÂN\n",
+            "metadata": {
+              "end": 838,
+              "start": 628,
+              "section": "than_nghi_dinh",
+              "printed_page": 11,
+              "article_numbers": [
+                10
+              ]
+            },
+            "score": 0.03149801587301587,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 4
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:1:655:1027:037254e182059b1c",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 1,
+            "text": "Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng\n1. Nghị định này quy định về bảo vệ dữ liệu cá nhân và trách nhiệm bảo vệ dữ liệu cá nhân của cơ quan, tổ chức, cá nhân có liên quan.\n2. Nghị định này áp dụng đối với:\na) Cơ quan, tổ chức, cá nhân Việt Nam;\nb) Cơ quan, tổ chức, cá nhân nước ngoài tại Việt Nam;\nc) Cơ quan, tổ chức, cá nhân Việt Nam hoạt động tại nước ngoài;",
+            "metadata": {
+              "end": 1027,
+              "start": 655,
+              "section": "than_nghi_dinh",
+              "printed_page": 3,
+              "article_numbers": [
+                1
+              ]
+            },
+            "score": 0.016129032258064516,
+            "component_ranks": {
+              "dense": 2
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:7:182:648:811359a214806c56 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 7]\nĐiều 8. Hành vi bị nghiêm cấm\n1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.\n3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.\n4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.\n\n\n[B:nd-13-2023-nd-cp:9:628:838:41e967f5a622d806 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 9]\n5. Thực hiện quy định của pháp luật về bảo vệ dữ liệu cá nhân và tham gia phòng, chống các hành vi vi phạm quy định về bảo vệ dữ liệu cá nhân.\nMục 2\nBẢO VỆ DỮ LIỆU CÁ NHÂN\nTRONG QUÁ TRÌNH XỬ LÝ DỮ LIỆU CÁ NHÂN\n\n\n[B:nd-13-2023-nd-cp:1:655:1027:037254e182059b1c | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 1]\nĐiều 1. Phạm vi điều chỉnh và đối tượng áp dụng\n1. Nghị định này quy định về bảo vệ dữ liệu cá nhân và trách nhiệm bảo vệ dữ liệu cá nhân của cơ quan, tổ chức, cá nhân có liên quan.\n2. Nghị định này áp dụng đối với:\na) Cơ quan, tổ chức, cá nhân Việt Nam;\nb) Cơ quan, tổ chức, cá nhân nước ngoài tại Việt Nam;\nc) Cơ quan, tổ chức, cá nhân Việt Nam hoạt động tại nước ngoài;",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:7:182:648:811359a214806c56",
+          "B:nd-13-2023-nd-cp:9:628:838:41e967f5a622d806",
+          "B:nd-13-2023-nd-cp:1:655:1027:037254e182059b1c"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 22.704
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ]
+  },
+  {
+    "query_id": "q05",
+    "question": "Theo quy tắc chung về quyền hạn chế xử lý, việc hạn chế phải thực hiện trong bao lâu sau khi có yêu cầu và áp dụng cho phần dữ liệu nào?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2370.53,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1082.44,
+        "prompt_tokens": 532,
+        "output_tokens": 56,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Quy tắc chung về quyền hạn chế xử lý, việc hạn chế phải thực hiện trong bao lâu sau khi có yêu cầu và áp dụng cho phần dữ liệu nào?"
+      },
+      {
+        "elapsed_ms": 1264.961,
+        "prompt_tokens": 883,
+        "output_tokens": 59,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Theo quy tắc chung về quyền hạn chế xử lý, việc hạn chế phải thực hiện trong bao lâu sau khi có yêu cầu và áp dụng cho phần dữ liệu nào?\n\n[1] Trang 8\nb) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác.\n7. Quyền cung cấp dữ liệu\nChủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n8. Quyền phản đối xử lý dữ liệu\n\n\n[2] Trang 8\n4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n",
+        "response_text": "Việc hạn chế xử lý dữ liệu phải được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu và áp dụng cho toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác [1]."
+      }
+    ],
+    "status": "answered",
+    "answer": "Việc hạn chế xử lý dữ liệu phải được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu và áp dụng cho toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác [B:nd-13-2023-nd-cp:8:388:831:02190dbb8fc62f27].",
+    "citations": [
+      "B:nd-13-2023-nd-cp:8:388:831:02190dbb8fc62f27"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Theo quy tắc chung về quyền hạn chế xử lý, việc hạn chế phải thực hiện trong bao lâu sau khi có yêu cầu và áp dụng cho phần dữ liệu nào?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:8:388:831:02190dbb8fc62f27",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 8,
+            "text": "b) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác.\n7. Quyền cung cấp dữ liệu\nChủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n8. Quyền phản đối xử lý dữ liệu\n",
+            "metadata": {
+              "end": 831,
+              "start": 388,
+              "section": "than_nghi_dinh",
+              "printed_page": 10,
+              "article_numbers": [
+                9
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 8,
+            "text": "4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n",
+            "metadata": {
+              "end": 388,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 10,
+              "article_numbers": [
+                9
+              ]
+            },
+            "score": 0.03200204813108039,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:8:831:1329:172099b168550dd0",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 8,
+            "text": "a) Chủ thể dữ liệu được phản đối Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân xử lý dữ liệu cá nhân của mình nhằm ngăn chặn hoặc hạn chế tiết lộ dữ liệu cá nhân hoặc sử dụng cho mục đích quảng cáo, tiếp thị, trừ trường hợp luật có quy định khác;\nb) Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thực hiện yêu cầu của chủ thể dữ liệu trong 72 giờ sau khi nhận được yêu cầu, trừ trường hợp luật có quy định khác.\n9. Quyền khiếu nại, tố cáo, khởi kiện\n",
+            "metadata": {
+              "end": 1329,
+              "start": 831,
+              "section": "than_nghi_dinh",
+              "printed_page": 10,
+              "article_numbers": [
+                9
+              ]
+            },
+            "score": 0.03200204813108039,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 3
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:8:388:831:02190dbb8fc62f27 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 8]\nb) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác.\n7. Quyền cung cấp dữ liệu\nChủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n8. Quyền phản đối xử lý dữ liệu\n\n\n[B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 8]\n4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:8:388:831:02190dbb8fc62f27",
+          "B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 22.869
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q06",
+    "question": "Nếu khách hàng bỏ qua yêu cầu xin phép và không trả lời thì bên xử lý có thể xem như khách hàng đã cho phép không?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1548.861,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1158.88,
+        "prompt_tokens": 526,
+        "output_tokens": 51,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Nếu khách hàng bỏ qua yêu cầu xin phép và không trả lời thì bên xử lý có thể xem như khách hàng đã cho phép không?"
+      },
+      {
+        "elapsed_ms": 343.773,
+        "prompt_tokens": 882,
+        "output_tokens": 9,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Nếu khách hàng bỏ qua yêu cầu xin phép và không trả lời thì bên xử lý có thể xem như khách hàng đã cho phép không?\n\n[1] Trang 7\nĐiều 9. Quyền của chủ thể dữ liệu\n1. Quyền được biết\nChủ thể dữ liệu được biết về hoạt động xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n2. Quyền đồng ý\nChủ thể dữ liệu được đồng ý hoặc không đồng ý cho phép xử lý dữ liệu cá nhân của mình, trừ trường hợp quy định tại Điều 17 Nghị định này.\n3. Quyền truy cập\nChủ thể dữ liệu được truy cập để xem, chỉnh sửa hoặc yêu cầu chỉnh sửa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n\n[2] Trang 4\n8. Sự đồng ý của chủ thể dữ liệu là việc thể hiện rõ ràng, tự nguyện, khẳng định việc cho phép xử lý dữ liệu cá nhân của chủ thể dữ liệu.\n9. Bên Kiểm soát dữ liệu cá nhân là tổ chức, cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân.\n10. Bên Xử lý dữ liệu cá nhân là tổ chức, cá nhân thực hiện việc xử lý dữ liệu thay mặt cho Bên Kiểm soát dữ liệu, thông qua một hợp đồng hoặc thỏa thuận với Bên Kiểm soát dữ liệu.\n",
+        "response_text": "Không đủ bằng chứng để trả lời."
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Nếu khách hàng bỏ qua yêu cầu xin phép và không trả lời thì bên xử lý có thể xem như khách hàng đã cho phép không?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:7:802:1270:cd5347eb3d0c0f46",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 7,
+            "text": "Điều 9. Quyền của chủ thể dữ liệu\n1. Quyền được biết\nChủ thể dữ liệu được biết về hoạt động xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n2. Quyền đồng ý\nChủ thể dữ liệu được đồng ý hoặc không đồng ý cho phép xử lý dữ liệu cá nhân của mình, trừ trường hợp quy định tại Điều 17 Nghị định này.\n3. Quyền truy cập\nChủ thể dữ liệu được truy cập để xem, chỉnh sửa hoặc yêu cầu chỉnh sửa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.",
+            "metadata": {
+              "end": 1270,
+              "start": 802,
+              "section": "than_nghi_dinh",
+              "printed_page": 9,
+              "article_numbers": [
+                9
+              ]
+            },
+            "score": 0.029631255487269532,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 7,
+              "tfidf": 8
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:4:0:430:82ac26a900809873",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 4,
+            "text": "8. Sự đồng ý của chủ thể dữ liệu là việc thể hiện rõ ràng, tự nguyện, khẳng định việc cho phép xử lý dữ liệu cá nhân của chủ thể dữ liệu.\n9. Bên Kiểm soát dữ liệu cá nhân là tổ chức, cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân.\n10. Bên Xử lý dữ liệu cá nhân là tổ chức, cá nhân thực hiện việc xử lý dữ liệu thay mặt cho Bên Kiểm soát dữ liệu, thông qua một hợp đồng hoặc thỏa thuận với Bên Kiểm soát dữ liệu.\n",
+            "metadata": {
+              "end": 430,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 6,
+              "article_numbers": [
+                2
+              ]
+            },
+            "score": 0.029418126757516764,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 9,
+              "tfidf": 7
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:17:1414:1876:e2db75badc93e493",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 17,
+            "text": "2. Việc xử lý dữ liệu cá nhân của khách hàng để kinh doanh dịch vụ tiếp thị, giới thiệu sản phẩm quảng cáo phải được sự đồng ý của khách hàng, trên cơ sở khách hàng biết rõ nội dung, phương thức, hình thức, tần suất giới thiệu sản phẩm.\n3. Tổ chức, cá nhân kinh doanh dịch vụ tiếp thị, giới thiệu sản phẩm quảng cáo có trách nhiệm chứng minh việc sử dụng dữ liệu cá nhân của khách hàng được giới thiệu sản phẩm đúng với quy định tại khoản 1 và khoản 2 Điều này.\n",
+            "metadata": {
+              "end": 1876,
+              "start": 1414,
+              "section": "than_nghi_dinh",
+              "printed_page": 19,
+              "article_numbers": [
+                21
+              ]
+            },
+            "score": 0.01639344262295082,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "tfidf": 1
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:7:802:1270:cd5347eb3d0c0f46 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 7]\nĐiều 9. Quyền của chủ thể dữ liệu\n1. Quyền được biết\nChủ thể dữ liệu được biết về hoạt động xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n2. Quyền đồng ý\nChủ thể dữ liệu được đồng ý hoặc không đồng ý cho phép xử lý dữ liệu cá nhân của mình, trừ trường hợp quy định tại Điều 17 Nghị định này.\n3. Quyền truy cập\nChủ thể dữ liệu được truy cập để xem, chỉnh sửa hoặc yêu cầu chỉnh sửa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n\n[B:nd-13-2023-nd-cp:4:0:430:82ac26a900809873 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 4]\n8. Sự đồng ý của chủ thể dữ liệu là việc thể hiện rõ ràng, tự nguyện, khẳng định việc cho phép xử lý dữ liệu cá nhân của chủ thể dữ liệu.\n9. Bên Kiểm soát dữ liệu cá nhân là tổ chức, cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân.\n10. Bên Xử lý dữ liệu cá nhân là tổ chức, cá nhân thực hiện việc xử lý dữ liệu thay mặt cho Bên Kiểm soát dữ liệu, thông qua một hợp đồng hoặc thỏa thuận với Bên Kiểm soát dữ liệu.\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:7:802:1270:cd5347eb3d0c0f46",
+          "B:nd-13-2023-nd-cp:4:0:430:82ac26a900809873"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 45.811
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "q07",
+    "question": "Người dùng rút lại sự đồng ý. Việc rút lại có làm thay đổi tính hợp pháp của các hoạt động xử lý đã được họ đồng ý trước đó không?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2500.951,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1074.036,
+        "prompt_tokens": 531,
+        "output_tokens": 56,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Người dùng rút lại sự đồng ý. Việc rút lại có làm thay đổi tính hợp pháp của các hoạt động xử lý đã được họ đồng ý trước đó không?"
+      },
+      {
+        "elapsed_ms": 1397.691,
+        "prompt_tokens": 917,
+        "output_tokens": 65,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Người dùng rút lại sự đồng ý. Việc rút lại có làm thay đổi tính hợp pháp của các hoạt động xử lý đã được họ đồng ý trước đó không?\n\n[1] Trang 10\nĐiều 12. Rút lại sự đồng ý\n1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.\n2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.\n\n\n[2] Trang 10\n3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.\n\n[3] Trang 8\n4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n",
+        "response_text": "Việc rút lại sự đồng ý không làm thay đổi tính hợp pháp của các hoạt động xử lý đã được người dùng đồng ý trước đó. Cụ thể, việc rút lại sự đồng ý chỉ ảnh hưởng đến những hoạt động xử lý dữ liệu diễn ra sau khi người dùng thực hiện hành vi rút lại [1]."
+      }
+    ],
+    "status": "answered",
+    "answer": "Việc rút lại sự đồng ý không làm thay đổi tính hợp pháp của các hoạt động xử lý đã được người dùng đồng ý trước đó. Cụ thể, việc rút lại sự đồng ý chỉ ảnh hưởng đến những hoạt động xử lý dữ liệu diễn ra sau khi người dùng thực hiện hành vi rút lại [B:nd-13-2023-nd-cp:10:1399:1714:202b31e540ad8419].",
+    "citations": [
+      "B:nd-13-2023-nd-cp:10:1399:1714:202b31e540ad8419"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Người dùng rút lại sự đồng ý. Việc rút lại có làm thay đổi tính hợp pháp của các hoạt động xử lý đã được họ đồng ý trước đó không?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:10:1399:1714:202b31e540ad8419",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 10,
+            "text": "Điều 12. Rút lại sự đồng ý\n1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.\n2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.\n",
+            "metadata": {
+              "end": 1714,
+              "start": 1399,
+              "section": "than_nghi_dinh",
+              "printed_page": 12,
+              "article_numbers": [
+                12
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 10,
+            "text": "3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.",
+            "metadata": {
+              "end": 1931,
+              "start": 1714,
+              "section": "than_nghi_dinh",
+              "printed_page": 12,
+              "article_numbers": [
+                12
+              ]
+            },
+            "score": 0.03200204813108039,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 8,
+            "text": "4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n",
+            "metadata": {
+              "end": 388,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 10,
+              "article_numbers": [
+                9
+              ]
+            },
+            "score": 0.03200204813108039,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 3
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:10:1399:1714:202b31e540ad8419 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 10]\nĐiều 12. Rút lại sự đồng ý\n1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.\n2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.\n\n\n[B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 10]\n3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.\n\n[B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 8]\n4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:10:1399:1714:202b31e540ad8419",
+          "B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c",
+          "B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 28.889
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q08",
+    "question": "Trong phần điều khoản của Nghị định, theo quy tắc chung, thông báo xử lý dữ liệu cá nhân được gửi mấy lần và vào thời điểm nào?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2058.211,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1063.23,
+        "prompt_tokens": 529,
+        "output_tokens": 54,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Trong phần điều khoản của Nghị định, theo quy tắc chung, thông báo xử lý dữ liệu cá nhân được gửi mấy lần và vào thời điểm nào?"
+      },
+      {
+        "elapsed_ms": 973.524,
+        "prompt_tokens": 903,
+        "output_tokens": 43,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Trong phần điều khoản của Nghị định, theo quy tắc chung, thông báo xử lý dữ liệu cá nhân được gửi mấy lần và vào thời điểm nào?\n\n[1] Trang 11\nĐiều 13. Thông báo xử lý dữ liệu cá nhân\n1. Việc thông báo được thực hiện một lần trước khi tiến hành đối với hoạt động xử lý dữ liệu cá nhân.\n2. Nội dung thông báo cho chủ thể dữ liệu về xử lý dữ liệu cá nhân:\na) Mục đích xử lý;\nb) Loại dữ liệu cá nhân được sử dụng có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;\nc) Cách thức xử lý;\nd) Thông tin về các tổ chức, cá nhân khác có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;\n\n\n[2] Trang 18\n2. Bên Xử lý dữ liệu cá nhân phải thông báo cho Bên Kiểm soát dữ liệu cá nhân một cách nhanh nhất có thể sau khi nhận thấy có sự vi phạm quy định về bảo vệ dữ liệu cá nhân.\n3. Nội dung thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân:\na) Mô tả tính chất của việc vi phạm quy định bảo vệ dữ liệu cá nhân, bao gồm: thời gian, địa điểm, hành vi, tổ chức, cá nhân, các loại dữ liệu cá nhân và số lượng dữ liệu liên quan;\n",
+        "response_text": "Theo quy tắc chung trong phần điều khoản của Nghị định, thông báo xử lý dữ liệu cá nhân được thực hiện một lần trước khi tiến hành đối với hoạt động xử lý dữ liệu cá nhân [1]."
+      }
+    ],
+    "status": "answered",
+    "answer": "Theo quy tắc chung trong phần điều khoản của Nghị định, thông báo xử lý dữ liệu cá nhân được thực hiện một lần trước khi tiến hành đối với hoạt động xử lý dữ liệu cá nhân [B:nd-13-2023-nd-cp:11:255:724:ed20be03619cf86b].",
+    "citations": [
+      "B:nd-13-2023-nd-cp:11:255:724:ed20be03619cf86b"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong phần điều khoản của Nghị định, theo quy tắc chung, thông báo xử lý dữ liệu cá nhân được gửi mấy lần và vào thời điểm nào?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:11:255:724:ed20be03619cf86b",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 11,
+            "text": "Điều 13. Thông báo xử lý dữ liệu cá nhân\n1. Việc thông báo được thực hiện một lần trước khi tiến hành đối với hoạt động xử lý dữ liệu cá nhân.\n2. Nội dung thông báo cho chủ thể dữ liệu về xử lý dữ liệu cá nhân:\na) Mục đích xử lý;\nb) Loại dữ liệu cá nhân được sử dụng có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;\nc) Cách thức xử lý;\nd) Thông tin về các tổ chức, cá nhân khác có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;\n",
+            "metadata": {
+              "end": 724,
+              "start": 255,
+              "section": "than_nghi_dinh",
+              "printed_page": 13,
+              "article_numbers": [
+                13
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:18:663:1084:4ee3eba01b7e4eca",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 18,
+            "text": "2. Bên Xử lý dữ liệu cá nhân phải thông báo cho Bên Kiểm soát dữ liệu cá nhân một cách nhanh nhất có thể sau khi nhận thấy có sự vi phạm quy định về bảo vệ dữ liệu cá nhân.\n3. Nội dung thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân:\na) Mô tả tính chất của việc vi phạm quy định bảo vệ dữ liệu cá nhân, bao gồm: thời gian, địa điểm, hành vi, tổ chức, cá nhân, các loại dữ liệu cá nhân và số lượng dữ liệu liên quan;\n",
+            "metadata": {
+              "end": 1084,
+              "start": 663,
+              "section": "than_nghi_dinh",
+              "printed_page": 20,
+              "article_numbers": [
+                23
+              ]
+            },
+            "score": 0.030798389007344232,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 7
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:13:1084:1525:ba992a9d3f84bebf",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 13,
+            "text": "Khi nhận được yêu cầu cung cấp dữ liệu cá nhân hợp lệ, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân có trách nhiệm cung cấp dữ liệu cá nhân thông báo về thời hạn, địa điểm, hình thức cung cấp dữ liệu cá nhân; chi phí thực tế để in, sao, chụp, gửi thông tin qua dịch vụ bưu chính, fax (nếu có) và phương thức, thời hạn thanh toán; thực hiện việc cung cấp dữ liệu cá nhân theo trình tự, thủ tục quy định tại Điều này.\n",
+            "metadata": {
+              "end": 1525,
+              "start": 1084,
+              "section": "than_nghi_dinh",
+              "printed_page": 15,
+              "article_numbers": [
+                14
+              ]
+            },
+            "score": 0.030303030303030304,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 6,
+              "tfidf": 6
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:11:255:724:ed20be03619cf86b | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 11]\nĐiều 13. Thông báo xử lý dữ liệu cá nhân\n1. Việc thông báo được thực hiện một lần trước khi tiến hành đối với hoạt động xử lý dữ liệu cá nhân.\n2. Nội dung thông báo cho chủ thể dữ liệu về xử lý dữ liệu cá nhân:\na) Mục đích xử lý;\nb) Loại dữ liệu cá nhân được sử dụng có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;\nc) Cách thức xử lý;\nd) Thông tin về các tổ chức, cá nhân khác có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;\n\n\n[B:nd-13-2023-nd-cp:18:663:1084:4ee3eba01b7e4eca | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 18]\n2. Bên Xử lý dữ liệu cá nhân phải thông báo cho Bên Kiểm soát dữ liệu cá nhân một cách nhanh nhất có thể sau khi nhận thấy có sự vi phạm quy định về bảo vệ dữ liệu cá nhân.\n3. Nội dung thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân:\na) Mô tả tính chất của việc vi phạm quy định bảo vệ dữ liệu cá nhân, bao gồm: thời gian, địa điểm, hành vi, tổ chức, cá nhân, các loại dữ liệu cá nhân và số lượng dữ liệu liên quan;\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:11:255:724:ed20be03619cf86b",
+          "B:nd-13-2023-nd-cp:18:663:1084:4ee3eba01b7e4eca"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 20.783
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q09",
+    "question": "Nếu vì lý do kỹ thuật mà chủ thể không tự sửa được dữ liệu của mình, họ có thể yêu cầu những bên nào sửa giúp?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2298.212,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1180.679,
+        "prompt_tokens": 527,
+        "output_tokens": 52,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Nếu vì lý do kỹ thuật mà chủ thể không tự sửa được dữ liệu của mình, họ có thể yêu cầu những bên nào sửa giúp?"
+      },
+      {
+        "elapsed_ms": 1094.802,
+        "prompt_tokens": 868,
+        "output_tokens": 48,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Nếu vì lý do kỹ thuật mà chủ thể không tự sửa được dữ liệu của mình, họ có thể yêu cầu những bên nào sửa giúp?\n\n[1] Trang 13\nĐiều 15. Chỉnh sửa dữ liệu cá nhân\n1. Chủ thể dữ liệu:\na) Được truy cập để xem, chỉnh sửa dữ liệu cá nhân của mình sau khi đã được Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thu thập theo sự đồng ý, trừ trường hợp luật có quy định khác;\nb) Trường hợp không thể chỉnh sửa trực tiếp vì lý do kỹ thuật hoặc vì lý do khác, chủ thể dữ liệu yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa dữ liệu cá nhân của mình.\n\n[2] Trang 14\n2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu sau khi được chủ thể dữ liệu cá nhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành. Trường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kể khi nhận được yêu cầu chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu.\n",
+        "response_text": "Nếu vì lý do kỹ thuật mà chủ thể không tự sửa được dữ liệu của mình, họ có thể yêu cầu Bên Kiểm soát dữ liệu cá nhân và Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa. [1]"
+      }
+    ],
+    "status": "answered",
+    "answer": "Nếu vì lý do kỹ thuật mà chủ thể không tự sửa được dữ liệu của mình, họ có thể yêu cầu Bên Kiểm soát dữ liệu cá nhân và Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa. [B:nd-13-2023-nd-cp:13:1525:2000:8d09b7588ab86be6]",
+    "citations": [
+      "B:nd-13-2023-nd-cp:13:1525:2000:8d09b7588ab86be6"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Nếu vì lý do kỹ thuật mà chủ thể không tự sửa được dữ liệu của mình, họ có thể yêu cầu những bên nào sửa giúp?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:13:1525:2000:8d09b7588ab86be6",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 13,
+            "text": "Điều 15. Chỉnh sửa dữ liệu cá nhân\n1. Chủ thể dữ liệu:\na) Được truy cập để xem, chỉnh sửa dữ liệu cá nhân của mình sau khi đã được Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thu thập theo sự đồng ý, trừ trường hợp luật có quy định khác;\nb) Trường hợp không thể chỉnh sửa trực tiếp vì lý do kỹ thuật hoặc vì lý do khác, chủ thể dữ liệu yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa dữ liệu cá nhân của mình.",
+            "metadata": {
+              "end": 2000,
+              "start": 1525,
+              "section": "than_nghi_dinh",
+              "printed_page": 15,
+              "article_numbers": [
+                15
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:14:0:374:680a988823ed910b",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 14,
+            "text": "2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu sau khi được chủ thể dữ liệu cá nhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành. Trường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kể khi nhận được yêu cầu chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu.\n",
+            "metadata": {
+              "end": 374,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 16,
+              "article_numbers": [
+                15
+              ]
+            },
+            "score": 0.03225806451612903,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:14:374:622:b7fe1e1d75ae5a65",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 14,
+            "text": "3. Bên Xử lý dữ liệu cá nhân, Bên thứ ba được chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu sau khi được Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân đồng ý bằng văn bản và biết rõ rằng đã có sự đồng ý của chủ thể dữ liệu.\n",
+            "metadata": {
+              "end": 622,
+              "start": 374,
+              "section": "than_nghi_dinh",
+              "printed_page": 16,
+              "article_numbers": [
+                15
+              ]
+            },
+            "score": 0.03149801587301587,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 4
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:13:1525:2000:8d09b7588ab86be6 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 13]\nĐiều 15. Chỉnh sửa dữ liệu cá nhân\n1. Chủ thể dữ liệu:\na) Được truy cập để xem, chỉnh sửa dữ liệu cá nhân của mình sau khi đã được Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thu thập theo sự đồng ý, trừ trường hợp luật có quy định khác;\nb) Trường hợp không thể chỉnh sửa trực tiếp vì lý do kỹ thuật hoặc vì lý do khác, chủ thể dữ liệu yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa dữ liệu cá nhân của mình.\n\n[B:nd-13-2023-nd-cp:14:0:374:680a988823ed910b | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 14]\n2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu sau khi được chủ thể dữ liệu cá nhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành. Trường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kể khi nhận được yêu cầu chỉnh sửa dữ liệu cá nhân của chủ thể dữ liệu.\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:13:1525:2000:8d09b7588ab86be6",
+          "B:nd-13-2023-nd-cp:14:0:374:680a988823ed910b"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 22.26
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q10",
+    "question": "Theo Điều 16, chủ thể dữ liệu có quyền yêu cầu xóa dữ liệu sau khi rút lại sự đồng ý không?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2916.265,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 944.903,
+        "prompt_tokens": 524,
+        "output_tokens": 49,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Theo Điều 16, chủ thể dữ liệu có quyền yêu cầu xóa dữ liệu sau khi rút lại sự đồng ý không?"
+      },
+      {
+        "elapsed_ms": 1945.536,
+        "prompt_tokens": 909,
+        "output_tokens": 94,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Theo Điều 16, chủ thể dữ liệu có quyền yêu cầu xóa dữ liệu sau khi rút lại sự đồng ý không?\n\n[1] Trang 14\nĐiều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân\n1. Chủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường hợp sau:\na) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp nhận các thiệt hại có thể xảy ra khi yêu cầu xóa dữ liệu;\nb) Rút lại sự đồng ý;\n\n\n[2] Trang 8\n4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n\n\n[3] Trang 10\n3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.",
+        "response_text": "Cả hai quyền này đều được quy định trong Điều 16:\n- Chủ thể dữ liệu có quyền yêu cầu xóa dữ liệu cá nhân của mình trong trường hợp **rút lại sự đồng ý** [1].\n- Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân phải thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý [3]."
+      }
+    ],
+    "status": "answered",
+    "answer": "Cả hai quyền này đều được quy định trong Điều 16:\n- Chủ thể dữ liệu có quyền yêu cầu xóa dữ liệu cá nhân của mình trong trường hợp **rút lại sự đồng ý** [B:nd-13-2023-nd-cp:14:622:975:97dad7f4560dfe59].\n- Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân phải thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý [B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c].",
+    "citations": [
+      "B:nd-13-2023-nd-cp:14:622:975:97dad7f4560dfe59",
+      "B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Theo Điều 16, chủ thể dữ liệu có quyền yêu cầu xóa dữ liệu sau khi rút lại sự đồng ý không?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:14:622:975:97dad7f4560dfe59",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 14,
+            "text": "Điều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân\n1. Chủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường hợp sau:\na) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp nhận các thiệt hại có thể xảy ra khi yêu cầu xóa dữ liệu;\nb) Rút lại sự đồng ý;\n",
+            "metadata": {
+              "end": 975,
+              "start": 622,
+              "section": "than_nghi_dinh",
+              "printed_page": 16,
+              "article_numbers": [
+                16
+              ]
+            },
+            "score": 0.03252247488101534,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 8,
+            "text": "4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n",
+            "metadata": {
+              "end": 388,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 10,
+              "article_numbers": [
+                9
+              ]
+            },
+            "score": 0.032266458495966696,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 3
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 10,
+            "text": "3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.",
+            "metadata": {
+              "end": 1931,
+              "start": 1714,
+              "section": "than_nghi_dinh",
+              "printed_page": 12,
+              "article_numbers": [
+                12
+              ]
+            },
+            "score": 0.0315136476426799,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 5,
+              "tfidf": 2
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:14:622:975:97dad7f4560dfe59 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 14]\nĐiều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân\n1. Chủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường hợp sau:\na) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp nhận các thiệt hại có thể xảy ra khi yêu cầu xóa dữ liệu;\nb) Rút lại sự đồng ý;\n\n\n[B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 8]\n4. Quyền rút lại sự đồng ý\nChủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.\n5. Quyền xóa dữ liệu\nChủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.\n6. Quyền hạn chế xử lý dữ liệu\na) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;\n\n\n[B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 10]\n3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:14:622:975:97dad7f4560dfe59",
+          "B:nd-13-2023-nd-cp:8:0:388:1d93e1abeb378a75",
+          "B:nd-13-2023-nd-cp:10:1714:1931:ab73b6cfca715d5c"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 25.547
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q11",
+    "question": "Trong trường hợp cần xin sự đồng ý để xử lý dữ liệu của người đã chết, nếu không có vợ, chồng hay con thành niên thì hỏi ai?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2027.605,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1099.752,
+        "prompt_tokens": 530,
+        "output_tokens": 55,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Trong trường hợp cần xin sự đồng ý để xử lý dữ liệu của người đã chết, nếu không có vợ, chồng hay con thành niên thì hỏi ai?"
+      },
+      {
+        "elapsed_ms": 900.353,
+        "prompt_tokens": 832,
+        "output_tokens": 39,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Trong trường hợp cần xin sự đồng ý để xử lý dữ liệu của người đã chết, nếu không có vợ, chồng hay con thành niên thì hỏi ai?\n\n[1] Trang 16\nĐiều 19. Xử lý dữ liệu cá nhân của người bị tuyên bố mất tích, đã chết\n1. Việc xử lý dữ liệu cá nhân liên quan đến dữ liệu cá nhân của người bị tuyên bố mất tích, người đã chết phải được sự đồng ý của vợ, chồng hoặc con thành niên của người đó, trường hợp không có những người này thì phải được sự đồng ý của cha, mẹ của người bị tuyên bố mất tích, người đã chết, trừ trường hợp quy định tại Điều 17 và Điều 18 Nghị định này.\n\n\n[2] Trang 15\nĐiều 17. Xử lý dữ liệu cá nhân trong trường hợp không cần sự đồng ý của chủ thể dữ liệu\n1. Trong trường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác. Bên Kiểm soát",
+        "response_text": "Câu trả lời [1]: Nếu không có vợ, chồng hay con thành niên thì phải được sự đồng ý của cha, mẹ của người bị tuyên bố mất tích, người đã chết."
+      }
+    ],
+    "status": "answered",
+    "answer": "Câu trả lời [B:nd-13-2023-nd-cp:16:1366:1792:20fecd5c9bc10ac5]: Nếu không có vợ, chồng hay con thành niên thì phải được sự đồng ý của cha, mẹ của người bị tuyên bố mất tích, người đã chết.",
+    "citations": [
+      "B:nd-13-2023-nd-cp:16:1366:1792:20fecd5c9bc10ac5"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong trường hợp cần xin sự đồng ý để xử lý dữ liệu của người đã chết, nếu không có vợ, chồng hay con thành niên thì hỏi ai?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:16:1366:1792:20fecd5c9bc10ac5",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 16,
+            "text": "Điều 19. Xử lý dữ liệu cá nhân của người bị tuyên bố mất tích, đã chết\n1. Việc xử lý dữ liệu cá nhân liên quan đến dữ liệu cá nhân của người bị tuyên bố mất tích, người đã chết phải được sự đồng ý của vợ, chồng hoặc con thành niên của người đó, trường hợp không có những người này thì phải được sự đồng ý của cha, mẹ của người bị tuyên bố mất tích, người đã chết, trừ trường hợp quy định tại Điều 17 và Điều 18 Nghị định này.\n",
+            "metadata": {
+              "end": 1792,
+              "start": 1366,
+              "section": "than_nghi_dinh",
+              "printed_page": 18,
+              "article_numbers": [
+                19
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:15:1783:2025:eeee48abd49fdbda",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 15,
+            "text": "Điều 17. Xử lý dữ liệu cá nhân trong trường hợp không cần sự đồng ý của chủ thể dữ liệu\n1. Trong trường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác. Bên Kiểm soát",
+            "metadata": {
+              "end": 2025,
+              "start": 1783,
+              "section": "than_nghi_dinh",
+              "printed_page": 17,
+              "article_numbers": [
+                17
+              ]
+            },
+            "score": 0.03200204813108039,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:9:838:1300:970959c5bcf04967",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 9,
+            "text": "Điều 11. Sự đồng ý của chủ thể dữ liệu\n1. Sự đồng ý của chủ thể dữ liệu được áp dụng đối với tất cả các hoạt động trong quy trình xử lý dữ liệu cá nhân, trừ trường hợp luật có quy định khác.\n2. Sự đồng ý của chủ thể dữ liệu chỉ có hiệu lực khi chủ thể dữ liệu tự nguyện và biết rõ các nội dung sau:\na) Loại dữ liệu cá nhân được xử lý;\nb) Mục đích xử lý dữ liệu cá nhân;\nc) Tổ chức, cá nhân được xử lý dữ liệu cá nhân;\nd) Các quyền, nghĩa vụ của chủ thể dữ liệu.\n",
+            "metadata": {
+              "end": 1300,
+              "start": 838,
+              "section": "than_nghi_dinh",
+              "printed_page": 11,
+              "article_numbers": [
+                11
+              ]
+            },
+            "score": 0.031054405392392875,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 7
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:16:1366:1792:20fecd5c9bc10ac5 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 16]\nĐiều 19. Xử lý dữ liệu cá nhân của người bị tuyên bố mất tích, đã chết\n1. Việc xử lý dữ liệu cá nhân liên quan đến dữ liệu cá nhân của người bị tuyên bố mất tích, người đã chết phải được sự đồng ý của vợ, chồng hoặc con thành niên của người đó, trường hợp không có những người này thì phải được sự đồng ý của cha, mẹ của người bị tuyên bố mất tích, người đã chết, trừ trường hợp quy định tại Điều 17 và Điều 18 Nghị định này.\n\n\n[B:nd-13-2023-nd-cp:15:1783:2025:eeee48abd49fdbda | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 15]\nĐiều 17. Xử lý dữ liệu cá nhân trong trường hợp không cần sự đồng ý của chủ thể dữ liệu\n1. Trong trường hợp khẩn cấp, cần xử lý ngay dữ liệu cá nhân có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác. Bên Kiểm soát",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:16:1366:1792:20fecd5c9bc10ac5",
+          "B:nd-13-2023-nd-cp:15:1783:2025:eeee48abd49fdbda"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 27.135
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q12",
+    "question": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo Mẫu 04 phải được gửi trong bao lâu, tính từ mốc nào?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 2326.246,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1187.861,
+        "prompt_tokens": 527,
+        "output_tokens": 52,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo Mẫu 04 phải được gửi trong bao lâu, tính từ mốc nào?"
+      },
+      {
+        "elapsed_ms": 1110.277,
+        "prompt_tokens": 871,
+        "output_tokens": 50,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo Mẫu 04 phải được gửi trong bao lâu, tính từ mốc nào?\n\n[1] Trang 20\n4. Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải luôn có sẵn để phục vụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo Mẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân.\n\n\n[2] Trang 19\nĐiều 24. Đánh giá tác động xử lý dữ liệu cá nhân\n1. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân của mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nHồ sơ đánh giá tác động xử lý dữ liệu cá nhân của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, bao gồm:\na) Thông tin và chi tiết liên lạc của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân;\n",
+        "response_text": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo Mẫu 04 phải được gửi Bộ Công an trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân.\n\nCâu trả lời [1]."
+      }
+    ],
+    "status": "answered",
+    "answer": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo Mẫu 04 phải được gửi Bộ Công an trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân.\n\nCâu trả lời [B:nd-13-2023-nd-cp:20:1349:1680:00b38007dd8383cc].",
+    "citations": [
+      "B:nd-13-2023-nd-cp:20:1349:1680:00b38007dd8383cc"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân theo Mẫu 04 phải được gửi trong bao lâu, tính từ mốc nào?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:20:1349:1680:00b38007dd8383cc",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 20,
+            "text": "4. Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải luôn có sẵn để phục vụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo Mẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân.\n",
+            "metadata": {
+              "end": 1680,
+              "start": 1349,
+              "section": "than_nghi_dinh",
+              "printed_page": 22,
+              "article_numbers": [
+                24
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:19:454:932:4fad7675b9bd9d31",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 19,
+            "text": "Điều 24. Đánh giá tác động xử lý dữ liệu cá nhân\n1. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân của mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nHồ sơ đánh giá tác động xử lý dữ liệu cá nhân của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, bao gồm:\na) Thông tin và chi tiết liên lạc của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân;\n",
+            "metadata": {
+              "end": 932,
+              "start": 454,
+              "section": "than_nghi_dinh",
+              "printed_page": 21,
+              "article_numbers": [
+                24
+              ]
+            },
+            "score": 0.03200204813108039,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 3
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:35:0:455:ccc9536150d2bca2",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 35,
+            "text": "Mẫu số 04\nTÊN TỔ CHỨC\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nSố:\n........, ngày…. tháng... năm...\nTHÔNG BÁO\nGỬI HỒ SƠ ĐÁNH GIÁ TÁC ĐỘNG XỬ LÝ DỮ LIỆU CÁ NHÂN\nKính gửi: Bộ Công an\n(Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao,\nBộ Công an)\nThực hiện quy định về bảo vệ dữ liệu cá nhân,..................¹ gửi Bộ Công an Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân, như sau:\n1. Thông tin về tổ chức, doanh nghiệp\n",
+            "metadata": {
+              "end": 455,
+              "start": 0,
+              "section": "phu_luc",
+              "form_number": "04",
+              "printed_page": 37
+            },
+            "score": 0.031754032258064516,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 4,
+              "tfidf": 2
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:20:1349:1680:00b38007dd8383cc | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 20]\n4. Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải luôn có sẵn để phục vụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo Mẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân.\n\n\n[B:nd-13-2023-nd-cp:19:454:932:4fad7675b9bd9d31 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 19]\nĐiều 24. Đánh giá tác động xử lý dữ liệu cá nhân\n1. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân của mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nHồ sơ đánh giá tác động xử lý dữ liệu cá nhân của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, bao gồm:\na) Thông tin và chi tiết liên lạc của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân;\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:20:1349:1680:00b38007dd8383cc",
+          "B:nd-13-2023-nd-cp:19:454:932:4fad7675b9bd9d31"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 27.4
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q13",
+    "question": "Khi đã làm xong việc xử lý, Bên Xử lý phải làm gì với dữ liệu đã nhận từ Bên Kiểm soát?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1287.451,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 919.713,
+        "prompt_tokens": 522,
+        "output_tokens": 47,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Khi đã làm xong việc xử lý, Bên Xử lý phải làm gì với dữ liệu đã nhận từ Bên Kiểm soát?"
+      },
+      {
+        "elapsed_ms": 344.387,
+        "prompt_tokens": 877,
+        "output_tokens": 9,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Khi đã làm xong việc xử lý, Bên Xử lý phải làm gì với dữ liệu đã nhận từ Bên Kiểm soát?\n\n[1] Trang 19\nĐiều 24. Đánh giá tác động xử lý dữ liệu cá nhân\n1. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân của mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nHồ sơ đánh giá tác động xử lý dữ liệu cá nhân của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, bao gồm:\na) Thông tin và chi tiết liên lạc của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân;\n\n\n[2] Trang 4\n8. Sự đồng ý của chủ thể dữ liệu là việc thể hiện rõ ràng, tự nguyện, khẳng định việc cho phép xử lý dữ liệu cá nhân của chủ thể dữ liệu.\n9. Bên Kiểm soát dữ liệu cá nhân là tổ chức, cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân.\n10. Bên Xử lý dữ liệu cá nhân là tổ chức, cá nhân thực hiện việc xử lý dữ liệu thay mặt cho Bên Kiểm soát dữ liệu, thông qua một hợp đồng hoặc thỏa thuận với Bên Kiểm soát dữ liệu.\n",
+        "response_text": "Không đủ bằng chứng để trả lời."
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Khi đã làm xong việc xử lý, Bên Xử lý phải làm gì với dữ liệu đã nhận từ Bên Kiểm soát?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:19:454:932:4fad7675b9bd9d31",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 19,
+            "text": "Điều 24. Đánh giá tác động xử lý dữ liệu cá nhân\n1. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân của mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nHồ sơ đánh giá tác động xử lý dữ liệu cá nhân của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, bao gồm:\na) Thông tin và chi tiết liên lạc của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân;\n",
+            "metadata": {
+              "end": 932,
+              "start": 454,
+              "section": "than_nghi_dinh",
+              "printed_page": 21,
+              "article_numbers": [
+                24
+              ]
+            },
+            "score": 0.029877369007803793,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 9,
+              "tfidf": 5
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:4:0:430:82ac26a900809873",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 4,
+            "text": "8. Sự đồng ý của chủ thể dữ liệu là việc thể hiện rõ ràng, tự nguyện, khẳng định việc cho phép xử lý dữ liệu cá nhân của chủ thể dữ liệu.\n9. Bên Kiểm soát dữ liệu cá nhân là tổ chức, cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân.\n10. Bên Xử lý dữ liệu cá nhân là tổ chức, cá nhân thực hiện việc xử lý dữ liệu thay mặt cho Bên Kiểm soát dữ liệu, thông qua một hợp đồng hoặc thỏa thuận với Bên Kiểm soát dữ liệu.\n",
+            "metadata": {
+              "end": 430,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 6,
+              "article_numbers": [
+                2
+              ]
+            },
+            "score": 0.029437229437229435,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 6,
+              "tfidf": 10
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:11:0:255:e404b9fb478cfe64",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 11,
+            "text": "4. Sau khi thực hiện quy định tại khoản 2 Điều này, Bên Kiểm soát dữ liệu, Bên Xử lý dữ liệu, Bên Kiểm soát và xử lý dữ liệu, Bên thứ ba phải ngừng và yêu cầu các tổ chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thể dữ liệu đã rút lại sự đồng ý.\n",
+            "metadata": {
+              "end": 255,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 13,
+              "article_numbers": [
+                12
+              ]
+            },
+            "score": 0.01639344262295082,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "tfidf": 1
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:19:454:932:4fad7675b9bd9d31 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 19]\nĐiều 24. Đánh giá tác động xử lý dữ liệu cá nhân\n1. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân lập và lưu giữ Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân của mình kể từ thời điểm bắt đầu xử lý dữ liệu cá nhân.\nHồ sơ đánh giá tác động xử lý dữ liệu cá nhân của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, bao gồm:\na) Thông tin và chi tiết liên lạc của Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân;\n\n\n[B:nd-13-2023-nd-cp:4:0:430:82ac26a900809873 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 4]\n8. Sự đồng ý của chủ thể dữ liệu là việc thể hiện rõ ràng, tự nguyện, khẳng định việc cho phép xử lý dữ liệu cá nhân của chủ thể dữ liệu.\n9. Bên Kiểm soát dữ liệu cá nhân là tổ chức, cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân.\n10. Bên Xử lý dữ liệu cá nhân là tổ chức, cá nhân thực hiện việc xử lý dữ liệu thay mặt cho Bên Kiểm soát dữ liệu, thông qua một hợp đồng hoặc thỏa thuận với Bên Kiểm soát dữ liệu.\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:19:454:932:4fad7675b9bd9d31",
+          "B:nd-13-2023-nd-cp:4:0:430:82ac26a900809873"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 23.083
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "q14",
+    "question": "Trong phiếu yêu cầu cung cấp dữ liệu dành cho cá nhân ở phụ lục, nếu chọn nhận qua bưu điện thì cần ghi thêm thông tin gì?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1594.173,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1060.65,
+        "prompt_tokens": 528,
+        "output_tokens": 53,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "phiếu yêu cầu cung cấp dữ liệu dành cho cá nhân ở phụ lục, nếu chọn nhận qua bưu điện thì cần ghi thêm thông tin gì?"
+      },
+      {
+        "elapsed_ms": 489.754,
+        "prompt_tokens": 812,
+        "output_tokens": 17,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Trong phiếu yêu cầu cung cấp dữ liệu dành cho cá nhân ở phụ lục, nếu chọn nhận qua bưu điện thì cần ghi thêm thông tin gì?\n\n[1] Trang 12\nb) Gửi Phiếu yêu cầu cung cấp dữ liệu cá nhân theo Mẫu số 01, 02 tại Phụ lục của Nghị định này qua mạng điện tử, dịch vụ bưu chính, fax đến Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân.\n6. Phiếu yêu cầu cung cấp dữ liệu cá nhân phải được thể hiện bằng tiếng Việt gồm các nội dung chính sau đây:\n\n[2] Trang 31\n9. Số lượng bản5:..................................................................................................\n10. Phương thức nhận dữ liệu cá nhân:\n□ Nhận tại nơi yêu cầu cung cấp\n□ Nhận qua bưu điện (ghi rõ địa chỉ nhận):.......................................................\n□ Fax (ghi rõ số fax):.........................................................................................\n□ Nhận qua mạng điện tử (ghi rõ địa chỉ nhận):................................................\n",
+        "response_text": "Nếu chọn nhận qua bưu điện thì cần ghi rõ địa chỉ nhận [2]."
+      }
+    ],
+    "status": "answered",
+    "answer": "Nếu chọn nhận qua bưu điện thì cần ghi rõ địa chỉ nhận [B:nd-13-2023-nd-cp:31:1362:1853:fbad73da73251e52].",
+    "citations": [
+      "B:nd-13-2023-nd-cp:31:1362:1853:fbad73da73251e52"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong phiếu yêu cầu cung cấp dữ liệu dành cho cá nhân ở phụ lục, nếu chọn nhận qua bưu điện thì cần ghi thêm thông tin gì?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:12:1690:2009:9b7a83430fea55fc",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 12,
+            "text": "b) Gửi Phiếu yêu cầu cung cấp dữ liệu cá nhân theo Mẫu số 01, 02 tại Phụ lục của Nghị định này qua mạng điện tử, dịch vụ bưu chính, fax đến Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân.\n6. Phiếu yêu cầu cung cấp dữ liệu cá nhân phải được thể hiện bằng tiếng Việt gồm các nội dung chính sau đây:",
+            "metadata": {
+              "end": 2009,
+              "start": 1690,
+              "section": "than_nghi_dinh",
+              "printed_page": 14,
+              "article_numbers": [
+                14
+              ]
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:31:1362:1853:fbad73da73251e52",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 31,
+            "text": "9. Số lượng bản5:..................................................................................................\n10. Phương thức nhận dữ liệu cá nhân:\n□ Nhận tại nơi yêu cầu cung cấp\n□ Nhận qua bưu điện (ghi rõ địa chỉ nhận):.......................................................\n□ Fax (ghi rõ số fax):.........................................................................................\n□ Nhận qua mạng điện tử (ghi rõ địa chỉ nhận):................................................\n",
+            "metadata": {
+              "end": 1853,
+              "start": 1362,
+              "section": "phu_luc",
+              "form_number": "01",
+              "printed_page": 33
+            },
+            "score": 0.03200204813108039,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 3
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:12:1313:1690:6362f5e65d0a1b3d",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 12,
+            "text": "Người tiếp nhận yêu cầu có trách nhiệm hướng dẫn tổ chức, cá nhân yêu cầu điền các nội dung vào Phiếu yêu cầu cung cấp dữ liệu cá nhân.\nTrường hợp tổ chức, cá nhân yêu cầu cung cấp thông tin không biết chữ hoặc bị khuyết tật không thể viết yêu cầu thì người tiếp nhận yêu cầu cung cấp thông tin có trách nhiệm giúp điền các nội dung vào Phiếu yêu cầu cung cấp dữ liệu cá nhân;\n",
+            "metadata": {
+              "end": 1690,
+              "start": 1313,
+              "section": "than_nghi_dinh",
+              "printed_page": 14,
+              "article_numbers": [
+                14
+              ]
+            },
+            "score": 0.0315136476426799,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 5,
+              "tfidf": 2
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:12:1690:2009:9b7a83430fea55fc | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 12]\nb) Gửi Phiếu yêu cầu cung cấp dữ liệu cá nhân theo Mẫu số 01, 02 tại Phụ lục của Nghị định này qua mạng điện tử, dịch vụ bưu chính, fax đến Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân.\n6. Phiếu yêu cầu cung cấp dữ liệu cá nhân phải được thể hiện bằng tiếng Việt gồm các nội dung chính sau đây:\n\n[B:nd-13-2023-nd-cp:31:1362:1853:fbad73da73251e52 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 31]\n9. Số lượng bản5:..................................................................................................\n10. Phương thức nhận dữ liệu cá nhân:\n□ Nhận tại nơi yêu cầu cung cấp\n□ Nhận qua bưu điện (ghi rõ địa chỉ nhận):.......................................................\n□ Fax (ghi rõ số fax):.........................................................................................\n□ Nhận qua mạng điện tử (ghi rõ địa chỉ nhận):................................................\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:12:1690:2009:9b7a83430fea55fc",
+          "B:nd-13-2023-nd-cp:31:1362:1853:fbad73da73251e52"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 43.276
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q15",
+    "question": "Trong biểu mẫu thông báo thay đổi nội dung hồ sơ ở phụ lục, bên nộp ghi nguyên nhân chỉnh sửa vào trường nào?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1292.32,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 1022.187,
+        "prompt_tokens": 524,
+        "output_tokens": 42,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "biểu mẫu thông báo thay đổi nội dung hồ sơ phụ lục bên nộp nguyên nhân chỉnh sửa"
+      },
+      {
+        "elapsed_ms": 237.594,
+        "prompt_tokens": 784,
+        "output_tokens": 4,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Trong biểu mẫu thông báo thay đổi nội dung hồ sơ ở phụ lục, bên nộp ghi nguyên nhân chỉnh sửa vào trường nào?\n\n[1] Trang 21\n6. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, Bên Xử lý dữ liệu cá nhân cập nhật, bổ sung Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân khi có sự thay đổi về nội dung hồ sơ đã gửi cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu số 05 tại Phụ lục của Nghị định này.\n\n\n[2] Trang 36\nChức danh:...........................................................................................................\nSố điện thoại liên lạc (cố định và di động):..........................................................\nEmail:....................................................................................................................\n2. Mô tả tóm tắt thay đổi nội dung hồ sơ\n- Nội dung thay đổi:..............................................................................................\n",
+        "response_text": "[1]"
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Trong biểu mẫu thông báo thay đổi nội dung hồ sơ ở phụ lục, bên nộp ghi nguyên nhân chỉnh sửa vào trường nào?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:21:0:335:270725ea40f65b15",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 21,
+            "text": "6. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, Bên Xử lý dữ liệu cá nhân cập nhật, bổ sung Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân khi có sự thay đổi về nội dung hồ sơ đã gửi cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu số 05 tại Phụ lục của Nghị định này.\n",
+            "metadata": {
+              "end": 335,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 23,
+              "article_numbers": [
+                24
+              ]
+            },
+            "score": 0.03252247488101534,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:36:1264:1764:1fbc0811e26741cc",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 36,
+            "text": "Chức danh:...........................................................................................................\nSố điện thoại liên lạc (cố định và di động):..........................................................\nEmail:....................................................................................................................\n2. Mô tả tóm tắt thay đổi nội dung hồ sơ\n- Nội dung thay đổi:..............................................................................................\n",
+            "metadata": {
+              "end": 1764,
+              "start": 1264,
+              "section": "phu_luc",
+              "form_number": "05",
+              "printed_page": 38
+            },
+            "score": 0.03252247488101534,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:36:2167:2565:e261a2126c21caa2",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 36,
+            "text": "(Tên cơ quan, tổ chức, doanh nghiệp) xin cam kết: Chịu trách nhiệm trước pháp luật về tính chính xác và tính hợp pháp của nội dung thay đổi và tài liệu kèm theo. Nơi nhận:\nTM. TỔ CHỨC, DOANH NGHIỆP - Như trên;\n(Ký, ghi rõ họ tên, đóng dấu) ...\n1 Tên hồ sơ: Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân hoặc Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài.\n2 Tên tổ chức, doanh nghiệp.",
+            "metadata": {
+              "end": 2565,
+              "start": 2167,
+              "section": "phu_luc",
+              "form_number": "05",
+              "printed_page": 38
+            },
+            "score": 0.031024531024531024,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 6
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:21:0:335:270725ea40f65b15 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 21]\n6. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, Bên Xử lý dữ liệu cá nhân cập nhật, bổ sung Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân khi có sự thay đổi về nội dung hồ sơ đã gửi cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu số 05 tại Phụ lục của Nghị định này.\n\n\n[B:nd-13-2023-nd-cp:36:1264:1764:1fbc0811e26741cc | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 36]\nChức danh:...........................................................................................................\nSố điện thoại liên lạc (cố định và di động):..........................................................\nEmail:....................................................................................................................\n2. Mô tả tóm tắt thay đổi nội dung hồ sơ\n- Nội dung thay đổi:..............................................................................................\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:21:0:335:270725ea40f65b15",
+          "B:nd-13-2023-nd-cp:36:1264:1764:1fbc0811e26741cc"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 32.086
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ]
+  },
+  {
+    "query_id": "q21",
+    "question": "Bản Nghị định ghi địa chỉ email chính thức nào để gửi hồ sơ đánh giá tác động xử lý dữ liệu cá nhân?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1312.558,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 966.908,
+        "prompt_tokens": 524,
+        "output_tokens": 49,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "Bản Nghị định ghi địa chỉ email chính thức nào để gửi hồ sơ đánh giá tác động xử lý dữ liệu cá nhân?"
+      },
+      {
+        "elapsed_ms": 321.808,
+        "prompt_tokens": 729,
+        "output_tokens": 9,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Bản Nghị định ghi địa chỉ email chính thức nào để gửi hồ sơ đánh giá tác động xử lý dữ liệu cá nhân?\n\n[1] Trang 35\nChức danh:............................................................................................................\nSố điện thoại liên lạc (cố định và di động):.........................................................\nEmail:....................................................................................................................\n2. Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân\n\n\n[2] Trang 37\nChức danh:............................................................................................................\nSố điện thoại liên lạc (cố định và di động):..........................................................\nEmail:....................................................................................................................\n2. Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài\n",
+        "response_text": "Không đủ bằng chứng để trả lời."
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Bản Nghị định ghi địa chỉ email chính thức nào để gửi hồ sơ đánh giá tác động xử lý dữ liệu cá nhân?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:35:1292:1685:f05f0b0c51d4cc99",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 35,
+            "text": "Chức danh:............................................................................................................\nSố điện thoại liên lạc (cố định và di động):.........................................................\nEmail:....................................................................................................................\n2. Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân\n",
+            "metadata": {
+              "end": 1685,
+              "start": 1292,
+              "section": "phu_luc",
+              "form_number": "04",
+              "printed_page": 37
+            },
+            "score": 0.03278688524590164,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:37:1307:1716:becc60352a5243a0",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 37,
+            "text": "Chức danh:............................................................................................................\nSố điện thoại liên lạc (cố định và di động):..........................................................\nEmail:....................................................................................................................\n2. Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài\n",
+            "metadata": {
+              "end": 1716,
+              "start": 1307,
+              "section": "phu_luc",
+              "form_number": "06",
+              "printed_page": 39
+            },
+            "score": 0.0315136476426799,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 5,
+              "tfidf": 2
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:35:0:455:ccc9536150d2bca2",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 35,
+            "text": "Mẫu số 04\nTÊN TỔ CHỨC\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nSố:\n........, ngày…. tháng... năm...\nTHÔNG BÁO\nGỬI HỒ SƠ ĐÁNH GIÁ TÁC ĐỘNG XỬ LÝ DỮ LIỆU CÁ NHÂN\nKính gửi: Bộ Công an\n(Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao,\nBộ Công an)\nThực hiện quy định về bảo vệ dữ liệu cá nhân,..................¹ gửi Bộ Công an Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân, như sau:\n1. Thông tin về tổ chức, doanh nghiệp\n",
+            "metadata": {
+              "end": 455,
+              "start": 0,
+              "section": "phu_luc",
+              "form_number": "04",
+              "printed_page": 37
+            },
+            "score": 0.031054405392392875,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 2,
+              "tfidf": 7
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:35:1292:1685:f05f0b0c51d4cc99 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 35]\nChức danh:............................................................................................................\nSố điện thoại liên lạc (cố định và di động):.........................................................\nEmail:....................................................................................................................\n2. Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân\n\n\n[B:nd-13-2023-nd-cp:37:1307:1716:becc60352a5243a0 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 37]\nChức danh:............................................................................................................\nSố điện thoại liên lạc (cố định và di động):..........................................................\nEmail:....................................................................................................................\n2. Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:35:1292:1685:f05f0b0c51d4cc99",
+          "B:nd-13-2023-nd-cp:37:1307:1716:becc60352a5243a0"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 23.564
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "q22",
+    "question": "Theo bản Nghị định này, mức phạt tiền cụ thể bằng đồng cho hành vi mua bán dữ liệu cá nhân không có sự đồng ý là bao nhiêu?",
+    "model": "qwen3.5:4b",
+    "method": "hybrid_rrf",
+    "context_budget_chars": 1500,
+    "elapsed_ms": 1266.239,
+    "api_cost_usd": 0,
+    "tool_call_count": 1,
+    "model_calls": [
+      {
+        "elapsed_ms": 887.037,
+        "prompt_tokens": 529,
+        "output_tokens": 45,
+        "requested_tools": [
+          "search"
+        ],
+        "tool_context": null,
+        "requested_query": "mức phạt tiền cụ thể bằng đồng cho hành vi mua bán dữ liệu cá nhân không có sự đồng ý"
+      },
+      {
+        "elapsed_ms": 354.807,
+        "prompt_tokens": 902,
+        "output_tokens": 9,
+        "requested_tools": [],
+        "tool_context": "Truy vấn đã dùng: Theo bản Nghị định này, mức phạt tiền cụ thể bằng đồng cho hành vi mua bán dữ liệu cá nhân không có sự đồng ý là bao nhiêu?\n\n[1] Trang 18\n2. Việc thiết lập các hệ thống phần mềm, biện pháp kỹ thuật hoặc tổ chức các hoạt động thu thập, chuyển giao, mua, bán dữ liệu cá nhân không có sự đồng ý của chủ thể dữ liệu là vi phạm pháp luật.\n\n\n[2] Trang 5\nĐiều 4. Xử lý vi phạm quy định bảo vệ dữ liệu cá nhân\nCơ quan, tổ chức, cá nhân vi phạm quy định bảo vệ dữ liệu cá nhân tùy theo mức độ có thể bị xử lý kỷ luật, xử phạt vi phạm hành chính, xử lý hình sự theo quy định.\n\n\n[3] Trang 7\nĐiều 8. Hành vi bị nghiêm cấm\n1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.\n3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.\n4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.\n",
+        "response_text": "Không đủ bằng chứng để trả lời."
+      }
+    ],
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Theo bản Nghị định này, mức phạt tiền cụ thể bằng đồng cho hành vi mua bán dữ liệu cá nhân không có sự đồng ý là bao nhiêu?",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nd-13-2023-nd-cp:18:0:196:603db5606a2f254c",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 18,
+            "text": "2. Việc thiết lập các hệ thống phần mềm, biện pháp kỹ thuật hoặc tổ chức các hoạt động thu thập, chuyển giao, mua, bán dữ liệu cá nhân không có sự đồng ý của chủ thể dữ liệu là vi phạm pháp luật.\n",
+            "metadata": {
+              "end": 196,
+              "start": 0,
+              "section": "than_nghi_dinh",
+              "printed_page": 20,
+              "article_numbers": [
+                22
+              ]
+            },
+            "score": 0.032266458495966696,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 3,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:5:1335:1553:b8e5718be0f98817",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 5,
+            "text": "Điều 4. Xử lý vi phạm quy định bảo vệ dữ liệu cá nhân\nCơ quan, tổ chức, cá nhân vi phạm quy định bảo vệ dữ liệu cá nhân tùy theo mức độ có thể bị xử lý kỷ luật, xử phạt vi phạm hành chính, xử lý hình sự theo quy định.\n",
+            "metadata": {
+              "end": 1553,
+              "start": 1335,
+              "section": "than_nghi_dinh",
+              "printed_page": 7,
+              "article_numbers": [
+                4
+              ]
+            },
+            "score": 0.032266458495966696,
+            "strategy": "tfidf",
+            "component_ranks": {
+              "dense": 1,
+              "tfidf": 3
+            }
+          },
+          {
+            "id": "B:nd-13-2023-nd-cp:7:182:648:811359a214806c56",
+            "source_id": "nd-13-2023-nd-cp",
+            "source": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm",
+            "page": 7,
+            "text": "Điều 8. Hành vi bị nghiêm cấm\n1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.\n3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.\n4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.\n",
+            "metadata": {
+              "end": 648,
+              "start": 182,
+              "section": "than_nghi_dinh",
+              "printed_page": 9,
+              "article_numbers": [
+                8
+              ]
+            },
+            "score": 0.016129032258064516,
+            "component_ranks": {
+              "dense": 2
+            }
+          }
+        ],
+        "context": "[B:nd-13-2023-nd-cp:18:0:196:603db5606a2f254c | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 18]\n2. Việc thiết lập các hệ thống phần mềm, biện pháp kỹ thuật hoặc tổ chức các hoạt động thu thập, chuyển giao, mua, bán dữ liệu cá nhân không có sự đồng ý của chủ thể dữ liệu là vi phạm pháp luật.\n\n\n[B:nd-13-2023-nd-cp:5:1335:1553:b8e5718be0f98817 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 5]\nĐiều 4. Xử lý vi phạm quy định bảo vệ dữ liệu cá nhân\nCơ quan, tổ chức, cá nhân vi phạm quy định bảo vệ dữ liệu cá nhân tùy theo mức độ có thể bị xử lý kỷ luật, xử phạt vi phạm hành chính, xử lý hình sự theo quy định.\n\n\n[B:nd-13-2023-nd-cp:7:182:648:811359a214806c56 | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-13-2023-nd-cp-39228.htm | page 7]\nĐiều 8. Hành vi bị nghiêm cấm\n1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.\n3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.\n4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.\n",
+        "context_ids": [
+          "B:nd-13-2023-nd-cp:18:0:196:603db5606a2f254c",
+          "B:nd-13-2023-nd-cp:5:1335:1553:b8e5718be0f98817",
+          "B:nd-13-2023-nd-cp:7:182:648:811359a214806c56"
+        ],
+        "top_k": 3,
+        "elapsed_ms": 23.992
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "query_id": "q16",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đủ sự đồng ý của trẻ từ đủ 7 tuổi và của cha, mẹ hoặc người giám hộ trong tình huống ngoài Điều 17.",
+    "context_reason": "Trang PDF 17 nêu đủ ngưỡng tuổi, các bên đồng ý và ngoại lệ Điều 17.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trang 17 trực tiếp hỗ trợ cả điều kiện tuổi lẫn các bên phải đồng ý."
+    ]
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "answer_reason": "Nêu đúng phải kèm lý do thông báo chậm, muộn nếu gửi sau 72 giờ.",
+    "context_reason": "Trang PDF 18, khoản 1 Điều 23, nêu đúng mốc và yêu cầu bổ sung lý do.",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đoạn được dẫn nêu rõ lý do thông báo chậm, muộn sau 72 giờ."
+    ]
+  },
+  {
+    "query_id": "q18",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "answer_reason": "Trả lời về nội dung hồ sơ đánh giá tác động thay vì thông báo sau khi chuyển thành công. Thiếu nơi nhận, hình thức và nội dung của thông báo đang được hỏi.",
+    "context_reason": "Hai đoạn ở trang PDF 21 nói về trường hợp được chuyển và nội dung hồ sơ, không chứa khoản 4 ở trang 22 về thông báo sau khi chuyển thành công.",
+    "citation_support": [
+      false,
+      false
+    ],
+    "citation_reasons": [
+      "Khoản 2 Điều 25 liệt kê thành phần hồ sơ đánh giá tác động, không hỗ trợ câu trả lời về thông báo sau khi chuyển thành công.",
+      "Khoản 1 Điều 25 nêu điều kiện chuyển, không nêu người nhận, hình thức hoặc nội dung của thông báo sau khi chuyển."
+    ]
+  },
+  {
+    "query_id": "q19",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "answer_reason": "Trả lời Tên tổ chức, doanh nghiệp. Câu hỏi cần trường Địa chỉ trụ sở của tổ chức, doanh nghiệp.",
+    "context_reason": "Có phần mở đầu Mẫu 02 nhưng không có đoạn chứa trường Địa chỉ trụ sở. Đoạn còn lại không xác định địa chỉ của đơn vị đứng tên trong mẫu.",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "Trang PDF 32, đoạn được dẫn chỉ có trường Tên tổ chức, doanh nghiệp."
+    ]
+  },
+  {
+    "query_id": "q20",
+    "answer_grade": 1,
+    "context_grade": 1,
+    "answer_reason": "Nhận ra trường cần ghi biện pháp ứng phó, nhưng không nêu đúng nhãn Biện pháp áp dụng trong Mẫu 03.",
+    "context_reason": "Khoản 3 Điều 23 mô tả mục hậu quả và biện pháp giảm thiểu, nhưng context không có đoạn Mẫu 03 ở trang PDF 34 để xác minh tên trường và vị trí.",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "Trang PDF 18 mô tả nội dung thông báo trong điều khoản, không phải tên trường của Mẫu 03."
+    ]
+  },
+  {
+    "query_id": "q23",
+    "abstention_correct": true,
+    "answer_reason": "Từ chối vì không thấy mức lệ phí cố định. Không suy đoán số tiền từ hướng dẫn gửi phiếu hoặc thông tin Mẫu 01.",
+    "citation_support": [],
+    "citation_reasons": []
+  },
+  {
+    "query_id": "q24",
+    "abstention_correct": true,
+    "answer_reason": "Từ chối và không suy đoán tên thuật toán mã hóa từ các quy định chung về bảo vệ dữ liệu.",
+    "citation_support": [],
+    "citation_reasons": []
+  }
+]

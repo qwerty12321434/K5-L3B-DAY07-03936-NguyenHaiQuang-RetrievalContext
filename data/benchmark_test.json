@@ -1,0 +1,88 @@
+[
+  {
+    "id": "q16",
+    "split": "test",
+    "answerable": true,
+    "question": "Ngoài trường hợp quy định tại Điều 17, khi xử lý dữ liệu của trẻ đã đủ 7 tuổi thì cần sự đồng ý của những ai?",
+    "expected_answer": "Cần sự đồng ý của trẻ và của cha, mẹ hoặc người giám hộ theo quy định.",
+    "gold": [
+      {
+        "source_id": "nd-13-2023-nd-cp",
+        "page": 17,
+        "evidence": "Việc xử lý dữ liệu cá nhân của trẻ em phải có sự đồng ý của trẻ em trong trường hợp trẻ em từ đủ 7 tuổi trở lên và có sự đồng ý của cha, mẹ hoặc người giám hộ theo quy định, trừ trường hợp quy định tại Điều 17 Nghị định này."
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "answerable": true,
+    "question": "Nếu thông báo vi phạm quy định bảo vệ dữ liệu cá nhân được gửi sau mốc 72 giờ thì phải kèm theo thông tin gì?",
+    "expected_answer": "Lý do thông báo chậm, muộn.",
+    "gold": [
+      {
+        "source_id": "nd-13-2023-nd-cp",
+        "page": 18,
+        "evidence": "Trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn."
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "answerable": true,
+    "question": "Sau khi việc chuyển dữ liệu cá nhân ra nước ngoài hoàn tất thành công, bên chuyển phải thông báo cho ai, bằng hình thức nào và những thông tin gì?",
+    "expected_answer": "Thông báo bằng văn bản cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao), gồm thông tin về việc chuyển dữ liệu và chi tiết liên lạc của tổ chức, cá nhân phụ trách.",
+    "gold": [
+      {
+        "source_id": "nd-13-2023-nd-cp",
+        "page": 22,
+        "evidence": "Bên chuyển dữ liệu thông báo gửi Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) thông tin về việc chuyển dữ liệu và chi tiết liên lạc của tổ chức, cá nhân phụ trách bằng văn bản sau khi việc chuyển dữ liệu diễn ra thành công."
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "answerable": true,
+    "question": "Trong phiếu yêu cầu cung cấp dữ liệu dành cho tổ chức, doanh nghiệp ở phụ lục, mẫu yêu cầu điền địa chỉ nào của đơn vị đứng tên?",
+    "expected_answer": "Địa chỉ trụ sở của tổ chức, doanh nghiệp.",
+    "gold": [
+      {
+        "source_id": "nd-13-2023-nd-cp",
+        "page": 32,
+        "evidence": "Địa chỉ trụ sở của tổ chức, doanh nghiệp:"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "answerable": true,
+    "question": "Ở Mẫu số 03 trong phụ lục, ngay sau trường ghi hậu quả, mục nào dùng để ghi cách tổ chức đã ứng phó với vi phạm?",
+    "expected_answer": "Trường Biện pháp áp dụng.",
+    "gold": [
+      {
+        "source_id": "nd-13-2023-nd-cp",
+        "page": 34,
+        "evidence": "- Hậu quả xảy ra:...................................................................................................\n- Biện pháp áp dụng:"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "question": "Mức lệ phí cố định bằng đồng để nộp Phiếu yêu cầu cung cấp dữ liệu cá nhân theo Mẫu số 01 được ghi là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Đối chiếu Điều 14 (trang PDF 12–13) và Mẫu số 01 (trang PDF 31). Điều 14 có chi phí thực tế in, sao, chụp, gửi nếu có, không ấn định lệ phí nộp phiếu. Rà toàn bộ 36 trang theo lệ phí, phí, chi phí và thanh toán."
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "question": "Nghị định nêu tên thuật toán mã hóa cụ thể nào mà Bên Xử lý dữ liệu cá nhân bắt buộc phải dùng?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Đối chiếu định nghĩa xử lý dữ liệu (trang PDF 3), các điều về biện pháp bảo vệ và trách nhiệm Bên Xử lý dữ liệu. Rà toàn bộ 36 trang theo mã hóa, mã hoá, thuật toán, AES, RSA và TLS. Văn bản đề cập mã hóa như một hoạt động xử lý nhưng không nêu tên thuật toán bắt buộc."
+  }
+]

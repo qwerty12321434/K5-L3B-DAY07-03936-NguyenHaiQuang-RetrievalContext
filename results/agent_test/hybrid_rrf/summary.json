@@ -1,0 +1,69 @@
+{
+  "split": "test",
+  "cases": 7,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 7,
+    "N": 7
+  },
+  "grounded_answer": {
+    "0": 2,
+    "1": 1,
+    "2": 2,
+    "N": 5,
+    "mean": 1.0
+  },
+  "citation_validity": {
+    "n": 2,
+    "N": 6
+  },
+  "answer_citation_coverage": {
+    "n": 5,
+    "N": 5
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 5
+  },
+  "retrieval": {
+    "original_hit_at_1": {
+      "n": 2,
+      "N": 5,
+      "percent": 40.0
+    },
+    "original_evidence_hit_at_3": {
+      "n": 3,
+      "N": 5,
+      "percent": 60.0
+    },
+    "any_search_evidence_hit_at_3": {
+      "n": 3,
+      "N": 5,
+      "percent": 60.0
+    }
+  },
+  "context_grades": {
+    "0": 2,
+    "1": 1,
+    "2": 2
+  },
+  "context_evidence_rate": {
+    "n": 2,
+    "N": 5,
+    "percent": 40.0
+  },
+  "search_call_distribution": {
+    "1": 7
+  },
+  "llm_tokens_successful_queries": {
+    "prompt": 9876,
+    "output": 876
+  },
+  "median_ms": 2181.756,
+  "api_cost_usd": 0,
+  "errors": []
+}

@@ -1,0 +1,66 @@
+{
+  "frozen_at_utc": "2026-11-16T03:58:13.869170+00:00",
+  "baseline": "dense",
+  "selected": "hybrid_rrf",
+  "best_overall_on_dev": "dense",
+  "rule": "Chọn giữa TF-IDF và hybrid theo tổng điểm grounded answer, từ chối đúng, context mức 2, sau cùng là thời gian trung vị thấp. Dense là baseline cố định.",
+  "reason": "Hybrid và TF-IDF hòa tổng điểm trả lời và từ chối đúng. Hybrid có đủ bằng chứng trong context ở nhiều câu dev hơn. Dense vẫn dẫn tổng điểm trả lời trên dev.",
+  "dev_scores": [
+    {
+      "method": "dense",
+      "answer_points": 18,
+      "answer_points_max": 30,
+      "correct_abstentions": 1,
+      "context_grade_2": 12,
+      "median_ms": 1904.776,
+      "review_sha256": "43cdd698219a0a59ccc491709ffd6853449c2aa588c6ee73bbba85c5c53fedfe"
+    },
+    {
+      "method": "hybrid_rrf",
+      "answer_points": 16,
+      "answer_points_max": 30,
+      "correct_abstentions": 2,
+      "context_grade_2": 11,
+      "median_ms": 2027.605,
+      "review_sha256": "b3a5ccd9e8e829ec28e01acbc145f58c0c9716773f87b99f1df942ae77dccb98"
+    },
+    {
+      "method": "tfidf",
+      "answer_points": 16,
+      "answer_points_max": 30,
+      "correct_abstentions": 2,
+      "context_grade_2": 10,
+      "median_ms": 1971.195,
+      "review_sha256": "ba2d5105a7144a1a833c0a0e4e8d1b00b620cbea6b0a28fd442b226e29732d38"
+    }
+  ],
+  "dev_questions_sha256": "734670949625a253522f8f5aad0a94f0754e0b83545cf2d618002c65d1632426",
+  "dev_run_sha256": "7d5f2ab1b135927be889ac943305a45621e738cfb1cd646e02909e573ae8e370",
+  "test_questions_sha256": "ce12ce53b9033e59c91716bd736e8e4b95da0329d46147dfc8ba9cd1b6a1fb87",
+  "configuration": {
+    "chat_model": "qwen3.5:4b",
+    "chat_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "ollama_version": "0.40.16",
+    "storage": {
+      "postgres": "16.16 (Debian 16.16-1.pgdg12+1)",
+      "pgvector": "0.8.7"
+    },
+    "chunks": 190,
+    "chunks_sha256": "60aff9c82603b9ad5691d8bde40bc835a0d3903fade65a04b011e1a5e858efeb",
+    "code_sha256": {
+      "agentic.py": "c18b237d972162be5dda1e34dde1527bc9ec48b4df5127b00b3d69360528fd3a",
+      "baseline.py": "f80a185c7690d02b6de364809cb06285676987572d710bce494aa463ed4e3705",
+      "day6_retriever.py": "1ee2b4f4d9a3772556908a98e8e3afbba42e5bfc0c5dd5a32230153abb96bd73",
+      "retrieval_benchmark.py": "44f37c0fee8cfc1c64c4a5a5dc646589b68bed75762f5b11dd7224ee6f7e89c8",
+      "day6/embeddings.py": "00d5ac652714c99d8c7c3374f9b80c5ae63565b977c8487e6a4c21b53e3a43d3",
+      "day6/store.py": "18ee0a509d81021173d1ae74d1bf0bd52421ccf53bfab15a736f9329259c0b21"
+    },
+    "max_searches": 4,
+    "top_k": 3,
+    "context_budget_chars": 1500,
+    "first_query": "original",
+    "filter": null
+  }
+}
